@@ -1,9 +1,7 @@
 CC=gcc
 FLAGS=-Wall -g
-NO_OPTFLAGS=-O1
-CFLAGS=-O2
-OPTFLAGS=-O3
-FULLOPTFLAGS=-O3 -march=native
+NO_OPTFLAGS=-O2
+OPTFLAGS=-O2
 
 BIN_FOLDER=bin/
 OBJS_COMMON=kernel.o rdtsc.o
@@ -11,7 +9,16 @@ OBJS_COMMON=kernel.o rdtsc.o
 all:clean	base	measure	etalonnage
 
 kernel.o: kernel.c
-	$(CC) $(CFLAGS) -o $@ -c $^
+	$(CC)   $(FLAGS) $(OPTFLAGS) -o $@ -c $^ 
+
+rdtsc.o: rdtsc.c
+	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ -c $^
+
+driver_base.o: driver_base.c
+	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ -c $^
+
+driver.o: driver.c
+	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ -c $^
 
 base:  $(OBJS_COMMON) driver_base.o
 	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ $^
