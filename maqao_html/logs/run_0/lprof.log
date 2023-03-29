@@ -1,0 +1,30 @@
+
+* Info: Selecting the 'perf-low-ppn' engine for node MSI-Gugnir
+
+* Info: "ref-cycles" not supported on MSI-Gugnir: fallback to "cpu-clock"
+* Info: Process launched (host MSI-Gugnir, process 1526)Minimum 168199083 RDTSC-cycles (6.85 per iner-iter)
+Mediane 171011178 RDTSC-cycles (6.96 per iner-iter)
+Bonne stabilité : 1.67 %
+
+* Info: Process finished (host MSI-Gugnir, process 1526)
+* Info: Dumping samples (host MSI-Gugnir, process 1526)
+* Info: Dumping source info for callchain nodes (host MSI-Gugnir, process 1526)
+* Info: Building/writing metadata (host MSI-Gugnir)
+* Info: Finished collect step (host MSI-Gugnir, process 1526)
+
+Your experiment path is /mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0
+
+To display your profiling results:
+####################################################################################################################################################
+#    LEVEL    |     REPORT     |                                                      COMMAND                                                      #
+####################################################################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/mnt/c/Users/Rayan/Documents/Développement/AOA/src/../maqao_html/tools/lprof_npsu_run_0  #
+####################################################################################################################################################
+
