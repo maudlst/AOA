@@ -1,4 +1,4 @@
-CC=clang
+CC=gcc
 FLAGS=-Wall -g
 NO_OPTFLAGS=-O1
 CFLAGS=-O2
@@ -11,7 +11,7 @@ OBJS_COMMON=kernel.o rdtsc.o
 all:clean	base	measure	etalonnage
 
 kernel.o: kernel.c
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ -c $^
 
 base:  $(OBJS_COMMON) driver_base.o
 	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ $^
