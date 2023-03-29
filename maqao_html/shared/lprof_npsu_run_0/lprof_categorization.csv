@@ -1,0 +1,5 @@
+Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
+_ALL;_ALL;_ALL;0;99.64;0;274;0;0;0;0;0;1.37;0;0.36;
+MSI-Gugnir;_ALL;_ALL;0;99.64;0;274;0;0;0;0;0;1.37;0;0.36;
+MSI-Gugnir;1526;_ALL;0;99.64;0;274;0;0;0;0;0;1.37;0;0.36;
+MSI-Gugnir;1526;1526;0;99.64;0;274;0;0;0;0;0;1.37;0;0.36;
