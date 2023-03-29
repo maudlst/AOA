@@ -1,28 +1,26 @@
-CC=gcc
-CFLAGS=-O2 -g -Wall
-OPTFLAGS=-O3 -g -Wall
-OBJS_COMMON= kernel.o rdtsc.o
+CC=clang
+FLAGS=-Wall -g
+NO_OPTFLAGS=-O1
+CFLAGS=-O2
+OPTFLAGS=-O3
+FULLOPTFLAGS=-O3 -march=native
 
-all:	base	measure	etalonnage
+BIN_FOLDER=bin/
+OBJS_COMMON=kernel.o rdtsc.o
 
+all:clean	base	measure	etalonnage
+
+kernel.o: kernel.c
+	$(CC) $(CFLAGS) -o $@ $^
 
 base:  $(OBJS_COMMON) driver_base.o
-	$(CC) -o $@ $^
+	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ $^
 
 measure: $(OBJS_COMMON) driver.o
-	$(CC) -o $@ $^
+	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ $^
 
 etalonnage: $(OBJS_COMMON) driver_etalonnage.o
-	$(CC) -o $@ $^
-
-driver_base.o: driver_base.c
-	$(CC) $(CFLAGS) -c $<
-
-driver.o: driver.c
-	$(CC) $(CFLAGS) -c $<
-
-driver_etalonnage.o: driver_etalonnage.c
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(FLAGS) $(NO_OPTFLAGS) -o $@ $^
 
 clean:
-	rm -rf $(OBJS_COMMON) driver.o driver_base.o measure base
+	rm -rf $(OBJS_COMMON) driver.o driver_base.o bin/measure base
