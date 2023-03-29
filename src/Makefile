@@ -1,7 +1,12 @@
-CC=gcc
-FLAGS=-Wall -g
-NO_OPTFLAGS=-O2
-OPTFLAGS=-O2
+ifeq ($(origin FOO), undefined)
+CC = gcc
+endif
+ifeq ($(origin FOO), default)
+CC = gcc
+endif
+FLAGS = -Wall -g
+NO_OPTFLAGS = -O2
+OPTFLAGS ?= -O2
 
 BIN_FOLDER=bin/
 OBJS_COMMON=kernel.o rdtsc.o
