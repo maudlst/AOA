@@ -1,0 +1,10 @@
+Je m'occupe de la ram : 15 GB Max 
+L3 : 4096KB Max
+
+
+nmin = (8192 * 1024) / 12 = 699050.67
+
+nmax = (15*1024*1024*1024) / 12 = 1342177280
+
+nrecommandé = 3 * nmin = 2097152
+

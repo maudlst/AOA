@@ -25,9 +25,9 @@ static int cmp_uint64 (const void *a, const void *b){
 int main(int argc, char *argv[])
 {
     /* check command line arguments */
-    if (argc != 5)
+    if (argc != 4)
     {
-        fprintf(stderr, "Usage: %s <size> <output file name> <nombre de warmups> <nombre de repetitions pendant la mesure>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <size> <output file name> <nombre de repetitions pendant la mesure>\n", argv[0]);
         return 1;
     }
 
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
    
 
     // warmup
-    int nb_repm = atoi(argv[4]);
+    int nb_repm = atoi(argv[3]);
     //int nb_repw = atoi(argv[3]);
     uint64_t temps_diff[nb_repm][NB_METAS];
 
@@ -74,12 +74,14 @@ int main(int argc, char *argv[])
     {
         const unsigned nb_iters = size * nb_repm;
         qsort(temps_diff[j], NB_METAS, sizeof temps_diff[j][0], cmp_uint64);
-        printf("Minimum %lu RDTSC-cycles (%.2f per iner-iter)\n", 
-                temps_diff[j][0], (float)temps_diff[j][0] / nb_iters);
-        printf("Mediane %lu RDTSC-cycles (%.2f per iner-iter)\n", 
-                temps_diff[j][NB_METAS/2], (float)temps_diff[j][NB_METAS/2] / nb_iters);
+        //printf("Minimum %lu RDTSC-cycles (%.2f per iner-iter)\n", 
+        //        temps_diff[j][0], (float)temps_diff[j][0] / nb_iters);
+        //printf("Mediane %lu RDTSC-cycles (%.2f per iner-iter)\n", 
+        //        temps_diff[j][NB_METAS/2], (float)temps_diff[j][NB_METAS/2] / nb_iters);
+        printf("%lu\n", temps_diff[j][NB_METAS/2]);
         const float stab = (temps_diff[j][NB_METAS/2] - temps_diff[j][0]) * 100.0f / temps_diff[j][0];
 
+        /*
         if(stab >= 10)
         {
             printf("Mauvaise stabilité : %.2f %%\n", stab);
@@ -92,6 +94,7 @@ int main(int argc, char *argv[])
         {
             printf("Bonne stabilité : %.2f %%\n", stab);
         }
+        */
     }
 
 
