@@ -1,0 +1,29 @@
+
+* Info: Selecting the 'perf-low-ppn' engine for node paul
+
+* Info: Process launched (host paul, process 10304)Minimum 85630461 RDTSC-cycles (6.53 per iner-iter)
+Mediane 88317462 RDTSC-cycles (6.74 per iner-iter)
+Bonne stabilité : 3.14 %
+
+* Info: Process finished (host paul, process 10304)
+* Info: Dumping samples (host paul, process 10304)
+* Info: Dumping source info for callchain nodes (host paul, process 10304)
+* Info: Building/writing metadata (host paul)
+* Info: Finished collect step (host paul, process 10304)
+
+Your experiment path is /home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0
+
+To display your profiling results:
+###########################################################################################################################################################
+#    LEVEL    |     REPORT     |                                                         COMMAND                                                          #
+###########################################################################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0  #
+###########################################################################################################################################################
+

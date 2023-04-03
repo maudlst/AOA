@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.16.0 - 766cd4a6ff7535ecc31168278a1f4b2786663ebf::20221116-145906 || 2022/11/16
+
+maqao oneview -R1 -- ./measure 131073 text 5 100 
+
+CMD:   /usr/local/bin/maqao lprof  --xp="/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/maqao_2023-04-03_23-03-21/binaries/measure  131073 text 5 100

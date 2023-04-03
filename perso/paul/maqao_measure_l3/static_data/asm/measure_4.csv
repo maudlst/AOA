@@ -1,0 +1,9 @@
+address;source_location;insn;indent
+0x16e0;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:15;PXOR	%XMM0,%XMM0;
+0x16e4;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:15;CVTSS2SD	(%RDI,%RDX,4),%XMM0;
+0x16e9;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:15;DIVSD	%XMM1,%XMM0;
+0x16ed;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:15;CVTSD2SS	%XMM0,%XMM0;
+0x16f1;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:15;MOVSS	%XMM0,(%RBP,%RDX,4);
+0x16f7;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:14;ADD	$0x1,%RDX;
+0x16fb;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:14;CMP	%RDX,%RBX;
+0x16fe;/home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernel.c:14;JNE	16e0 <kernel+0x60>;
