@@ -24,7 +24,7 @@ if [ -f measure ]
 then
     echo "Executing : maqao oneview -R1 -xp=../tmp --replace -- ./measure "$2 $3 $4 $5
     maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 $5
-    cp ../tmp/RESULTS/measure_one_html/index.html ../maqao_html/$dir/maqao_gcc_O2.html
+    cp -r ../tmp/RESULTS/measure_one_html/* ../maqao_html/$dir/
 else
     echo "Erreur : le fichier executable n'a pas été compilé avec succès."
 fi
@@ -34,7 +34,7 @@ if [ -f measure ]
 then
     echo "Executing : maqao oneview -R1 -xp=../tmp --replace -- ./measure "$2 $3 $4 $5
     maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 $5
-    cp ../tmp/RESULTS/measure_one_html/index.html ../maqao_html/$dir/maqao_gcc_O3.html
+    cp -r ../tmp/RESULTS/measure_one_html/* ../maqao_html/$dir/
 else
     echo "Erreur : le fichier executable n'a pas été compilé avec succès."
 fi
@@ -44,7 +44,7 @@ if [ -f measure ]
 then
     echo "Executing : maqao oneview -R1 -xp=../tmp --replace -- ./measure "$2 $3 $4 $5
     maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 $5
-    cp ../tmp/RESULTS/measure_one_html/index.html ../maqao_html/$dir/maqao_gcc_O3_Native.html
+    cp -r ../tmp/RESULTS/measure_one_html/* ../maqao_html/$dir/
 else
     echo "Erreur : le fichier executable n'a pas été compilé avec succès."
 fi
@@ -72,7 +72,7 @@ else
     if [ -f measure ]; then
         echo "Executing : maqao oneview -R1 -xp=../tmp --replace -- ./measure "$2 $3 $4 $5
         maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 $5
-        cp ../tmp/RESULTS/measure_one_html/index.html ../maqao_html/$dir/maqao_$(echo $CC)_O2.html
+        cp -r ../tmp/RESULTS/measure_one_html/* ../maqao_html/$dir/
     else
         echo "Erreur : le fichier executable n'a pas été compilé avec succès."
     fi
@@ -81,7 +81,7 @@ else
     if [ -f measure ]; then
         echo "Executing : maqao oneview -R1 -xp=../tmp --replace -- ./measure "$2 $3 $4 $5
         maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 $5
-        cp ../tmp/RESULTS/measure_one_html/index.html ../maqao_html/$dir/maqao_$(echo $CC)_O3.html
+        cp -r ../tmp/RESULTS/measure_one_html/* ../maqao_html/$dir/
     else
         echo "Erreur : le fichier executable n'a pas été compilé avec succès."
     fi
@@ -90,9 +90,8 @@ else
     if [ -f measure ]; then
         echo "Executing : maqao oneview -R1 -xp=../tmp --replace -- ./measure "$2 $3 $4 $5
         maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 $5
-        cp ../tmp/RESULTS/measure_one_html/index.html ../maqao_html/$dir/maqao_$(echo $CC)_O3_Native.html
+        cp -r ../tmp/RESULTS/measure_one_html/* ../maqao_html/$dir/
     else
         echo "Erreur : le fichier executable n'a pas été compilé avec succès."
     fi
 fi
-
