@@ -53,7 +53,5 @@ dkms.conf
 base 
 measure
 etalonnage
-maqao*/
-maqao-html/
 testing/
 tmp/*
