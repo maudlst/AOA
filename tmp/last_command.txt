@@ -1,1 +1,0 @@
-maqao oneview -R1 -xp=../tmp --replace -- ./measure 2097152 file 3 50 

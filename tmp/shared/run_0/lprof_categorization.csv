@@ -1,5 +1,0 @@
-Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
-_ALL;_ALL;_ALL;0;96.96;0;1019;0;3.04;0;0;0;5.09;0;0;
-debianah;_ALL;_ALL;0;96.96;0;1019;0;3.04;0;0;0;5.09;0;0;
-debianah;14392;_ALL;0;96.96;0;1019;0;3.04;0;0;0;5.09;0;0;
-debianah;14392;14392;0;96.96;0;1019;0;3.04;0;0;0;5.09;0;0;

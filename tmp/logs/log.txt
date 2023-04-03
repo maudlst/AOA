@@ -1,7 +1,0 @@
-********************************************************************************
-
-MAQAO 2.16.0 - 766cd4a6ff7535ecc31168278a1f4b2786663ebf::20221116-145906 || 2022/11/16
-
-maqao oneview -R1 -xp=../tmp --replace -- ./measure 2097152 file 3 50 
-
-CMD:   /usr/local/bin/maqao lprof  --xp="/home/ahenches/Documents/isty/AOA/src/../tmp/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/ahenches/Documents/isty/AOA/src/../tmp/binaries/measure  2097152 file 3 50

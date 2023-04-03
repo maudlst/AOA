@@ -1,6 +1,0 @@
-function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;
-6;measure;kernel;kernel.c:5-16;93.23;4.75;;;;;;;"100,0,0,0,0,0,0,0,0,0";kernel;
-7;measure;init_array;kernel.c:20-25;3.73;0.19;;;;;;;"100,0,0,0,0,0,0,0,0,0";init_array;
-231;libc-2.31.so;random;;1.77;0.09;;;;;;;"0,0,0,0,0,0,0,0,0,100";random;
-235;libc-2.31.so;random_r;;0.79;0.04;;;;;;;"0,0,0,0,0,0,0,0,0,100";random_r;
-236;libc-2.31.so;rand;;0.49;0.03;;;;;;;"0,0,0,0,0,0,0,0,0,100";rand;

@@ -1,3 +1,0 @@
-module;src_file;score;issue;opts;
-measure;kernel.c;0.5;"-O2, -O3 or -Ofast is missing. ";"AMD clang version 14.0.6 (CLANG: AOCC_4.0.0-Build#434 2022_10_28) (based on LLVM Mirror.Version.14.0.6)";
-measure;kernel.c;0.5;"-x(target) or -ax(target) is missing. ";"AMD clang version 14.0.6 (CLANG: AOCC_4.0.0-Build#434 2022_10_28) (based on LLVM Mirror.Version.14.0.6)";

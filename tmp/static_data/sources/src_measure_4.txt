@@ -1,5 +1,0 @@
-/home/ahenches/Documents/isty/AOA/src/kernel.c: 23 - 24
---------------------------------------------------------------------------------
-
-23:     for (i = 0; i < n; i++)
-24:         b[i] = (float)rand() / RAND_MAX;

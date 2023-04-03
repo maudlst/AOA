@@ -1,7 +1,0 @@
-********************************************************************************
-
-MAQAO 2.16.0 - 766cd4a6ff7535ecc31168278a1f4b2786663ebf::20221116-145906 || 2022/11/16
-
-maqao oneview -R1 -- ./compile_et_execute.sh 1000 text 10 100 
-
-CMD:   /usr/local/bin/maqao lprof  --xp="/mnt/c/Users/Rayan/Documents/Développement/AOA/scripts/maqao_2023-03-29_17-22-29/tools/lprof_npsu_run_0" --mpi-command=""   -- /mnt/c/Users/Rayan/Documents/Développement/AOA/scripts/maqao_2023-03-29_17-22-29/binaries/compile_et_execute.sh  1000 text 10 100
