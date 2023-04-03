@@ -1,0 +1,3 @@
+-O2
+-O3
+-O3 march native
