@@ -25,9 +25,9 @@ static int cmp_uint64 (const void *a, const void *b){
 int main(int argc, char *argv[])
 {
     /* check command line arguments */
-    if (argc != 4)
+    if (argc != 3)
     {
-        fprintf(stderr, "Usage: %s <size> <output file name> <nombre de repetitions pendant la mesure>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <size> <nombre de repetitions pendant la mesure>\n", argv[0]);
         return 1;
     }
 
@@ -37,9 +37,9 @@ int main(int argc, char *argv[])
 
    
 
-    // warmup
-    int nb_repm = atoi(argv[3]);
-    //int nb_repw = atoi(argv[3]);
+    int nb_repm = atoi(argv[2]);
+    printf("mediane;stabilité\n");
+
     uint64_t temps_diff[nb_repm][NB_METAS];
 
     for (int m = 0; m < NB_METAS; m++)
@@ -78,8 +78,8 @@ int main(int argc, char *argv[])
         //        temps_diff[j][0], (float)temps_diff[j][0] / nb_iters);
         //printf("Mediane %lu RDTSC-cycles (%.2f per iner-iter)\n", 
         //        temps_diff[j][NB_METAS/2], (float)temps_diff[j][NB_METAS/2] / nb_iters);
-        printf("%lu\n", temps_diff[j][NB_METAS/2]);
         const float stab = (temps_diff[j][NB_METAS/2] - temps_diff[j][0]) * 100.0f / temps_diff[j][0];
+        printf("%lu;%.2f\n", temps_diff[j][NB_METAS/2], stab);
 
         /*
         if(stab >= 10)
