@@ -77,21 +77,22 @@ int main(int argc, char *argv[])
         free(b);
     }
 
-    //const unsigned nb_iters = size * nb_repm;
-    // qsort(temps_diff, NB_METAS, sizeof temps_diff[0], cmp_uint64);
-    printf("n;RDTSC-cycles\n");
+    const unsigned nb_iters = size * nb_repm;
+    qsort(temps_diff, NB_METAS, sizeof temps_diff[0], cmp_uint64);
+    /*printf("n;RDTSC-cycles\n");
     uint64_t total_cycle = 0;
     for(int i = 0; i < NB_METAS; i++)
     {
         total_cycle += temps_diff[i];
         printf("%d;%" PRIu64 "\n", i, total_cycle);
     }
-    /*printf("Minimum %lu RDTSC-cycles (%.2f per iner-iter)\n", 
-            temps_diff[0], (float)temps_diff[0] / nb_iters);
-    printf("Mediane %lu RDTSC-cycles (%.2f per iner-iter)\n", 
-            temps_diff[NB_METAS/2], (float)temps_diff[NB_METAS/2] / nb_iters);
+    */
+    //printf("Mediane %lu RDTSC-cycles (%.2f per iner-iter)\n", 
+    //        temps_diff[NB_METAS/2], (float)temps_diff[NB_METAS/2] / nb_iters);
     const float stab = (temps_diff[NB_METAS/2] - temps_diff[0]) * 100.0f / temps_diff[0];
-
+    printf("%lu;%.2f;%.2f\n", temps_diff[NB_METAS/2], (float)temps_diff[NB_METAS/2] / nb_iters, stab);
+    //printf("Stabilité : %.2f \n", stab);
+    /*
     if(stab >= 10)
     {
         printf("Mauvaise stabilité : %.2f %%\n", stab);
@@ -104,7 +105,6 @@ int main(int argc, char *argv[])
     {
         printf("Bonne stabilité : %.2f %%\n", stab);
     }*/
-    //printf(
 
 
 
