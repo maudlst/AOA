@@ -1,7 +1,7 @@
-ifeq ($(origin FOO), undefined)
+ifeq ($(origin CC), undefined)
 CC = gcc
 endif
-ifeq ($(origin FOO), default)
+ifeq ($(origin CC), default)
 CC = gcc
 endif
 FLAGS = -Wall -g
