@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h> // atoi, qsort
 #include <stdint.h>
+#include <inttypes.h>
 
 #define NB_METAS 31
 
-#include <stdint.h>
 
 extern uint64_t rdtsc();
 extern void kernel(unsigned n, float a[n], const float b[n]);
@@ -24,9 +24,9 @@ static int cmp_uint64 (const void *a, const void *b){
 int main(int argc, char *argv[])
 {
     /* check command line arguments */
-    if (argc != 5)
+    if (argc != 4)
     {
-        fprintf(stderr, "Usage: %s <size> <output file name> <nombre de warmups> <nombre de repetitions pendant la mesure>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <size> <nombre de warmups> <nombre de repetitions pendant la mesure>\n", argv[0]);
         return 1;
     }
 
@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
    
 
     // warmup
-    int nb_repm = atoi(argv[4]);
-    int nb_repw = atoi(argv[3]);
+    int nb_repm = atoi(argv[3]);
+    int nb_repw = atoi(argv[2]);
     uint64_t temps_diff[NB_METAS];
 
     for (int m = 0; m < NB_METAS; m++)
@@ -77,9 +77,16 @@ int main(int argc, char *argv[])
         free(b);
     }
 
-    const unsigned nb_iters = size * nb_repm;
-    qsort(temps_diff, NB_METAS, sizeof temps_diff[0], cmp_uint64);
-    printf("Minimum %lu RDTSC-cycles (%.2f per iner-iter)\n", 
+    //const unsigned nb_iters = size * nb_repm;
+    // qsort(temps_diff, NB_METAS, sizeof temps_diff[0], cmp_uint64);
+    printf("n;RDTSC-cycles\n");
+    uint64_t total_cycle = 0;
+    for(int i = 0; i < NB_METAS; i++)
+    {
+        total_cycle += temps_diff[i];
+        printf("%d;%" PRIu64 "\n", i, total_cycle);
+    }
+    /*printf("Minimum %lu RDTSC-cycles (%.2f per iner-iter)\n", 
             temps_diff[0], (float)temps_diff[0] / nb_iters);
     printf("Mediane %lu RDTSC-cycles (%.2f per iner-iter)\n", 
             temps_diff[NB_METAS/2], (float)temps_diff[NB_METAS/2] / nb_iters);
@@ -96,7 +103,8 @@ int main(int argc, char *argv[])
     else
     {
         printf("Bonne stabilité : %.2f %%\n", stab);
-    }
+    }*/
+    //printf(
 
 
 
