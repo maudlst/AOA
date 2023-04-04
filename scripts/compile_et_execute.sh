@@ -17,7 +17,7 @@ make OPTFLAGS=-O2
 if [ -f measure ]
 then
     echo "Executing : maqao oneview -R1 -xp=../tmp --replace -- ./measure "$2 $3 $4 
-    maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 > file
+    maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 
     cp -r ../tmp/RESULTS/measure_one_html/ ../maqao_html/$dir/maqao_gcc_O2
 else
     echo "Erreur : le fichier executable n'a pas été compilé avec succès."
