@@ -4,8 +4,7 @@ echo $@
 
 cd src/
 
-
-if [ $# -eq 5 ]
+if [ $# -eq 4 ]
 then
     dir=$1
     echo "Enregistrement dans maqao_html/"$dir
