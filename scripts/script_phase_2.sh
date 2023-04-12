@@ -1,7 +1,6 @@
 if [ $# -eq 3 ]
 then
-    dir=$1
-    echo "Enregistrement dans maqao_html/"$dir
+    echo "Compilation et maqao dans tmp/"
 else 
     echo "Mauvais nombre d'arguments"
     exit
