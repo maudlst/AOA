@@ -8,6 +8,9 @@ if [ $# -eq 4 ]
 then
     dir=$1
     echo "Enregistrement dans maqao_html/"$dir
+else 
+    echo "Mauvais nombre d'arguments"
+    exit(1)
 fi 
 
 CC=gcc

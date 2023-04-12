@@ -7,13 +7,14 @@ endif
 FLAGS = -Wall -g
 NO_OPTFLAGS = -O2
 OPTFLAGS ?= -O2
+KERNEL ?= kernel.c
 
 BIN_FOLDER=bin/
 OBJS_COMMON=kernel.o rdtsc.o
 
 all:clean	base	measure	etalonnage
 
-kernel.o: kernel.c
+kernel.o: $(KERNEL)
 	$(CC)   $(FLAGS) $(OPTFLAGS) -o $@ -c $^ 
 
 rdtsc.o: rdtsc.c
