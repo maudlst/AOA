@@ -14,7 +14,7 @@ OBJS_COMMON=kernel.o rdtsc.o
 
 all:clean	base	measure	etalonnage
 
-kernel.o: $(KERNEL)
+kernel.o: kernels/$(KERNEL)
 	$(CC)   $(FLAGS) $(OPTFLAGS) -o $@ -c $^ 
 
 rdtsc.o: rdtsc.c
