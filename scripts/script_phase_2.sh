@@ -13,4 +13,5 @@ make CC=gcc OPTFLAGS=-O2 KERNEL=$1.c
 
 maqao oneview -R1 -xp=../tmp --replace -- ./measure $2 $3 $4 
 
+rm -rf ../phase_2_html/$dir/
 cp -r ../tmp/RESULTS/measure_one_html/ ../phase_2_html/$dir
