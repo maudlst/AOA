@@ -17,8 +17,8 @@ void kernel(unsigned n, float * restrict a, const float * restrict b)
     __m128 ivals_vec, b_vec, tmp_vec, s_vec = _mm_set_ps(0.0f, 0.0f, 0.0f, 0.0f);
 
 
-    const int stop_boucle = n - 4;
-    for (i = 0; i < stop_boucle; i+=4)
+    const int stop_boucle = n - 16;
+    for (i = 0; i < stop_boucle; i+=16)
     {
         i_float = (float)i;
         ivals_vec = _mm_set_ps(i_float, i_float+1, i_float+2, i_float+3);
@@ -27,6 +27,30 @@ void kernel(unsigned n, float * restrict a, const float * restrict b)
         s_vec = _mm_add_ps(tmp_vec, s_vec);
         
         _mm_store_ps(&tmp[i], tmp_vec);
+
+        i_float = (float)i+4;
+        ivals_vec = _mm_set_ps(i_float, i_float+1, i_float+2, i_float+3);
+        b_vec = _mm_load_ps(&b[i+4]);
+        tmp_vec = _mm_add_ps(b_vec, ivals_vec);
+        s_vec = _mm_add_ps(tmp_vec, s_vec);
+        
+        _mm_store_ps(&tmp[i+4], tmp_vec);
+
+        i_float = (float)i+8;
+        ivals_vec = _mm_set_ps(i_float, i_float+1, i_float+2, i_float+3);
+        b_vec = _mm_load_ps(&b[i+8]);
+        tmp_vec = _mm_add_ps(b_vec, ivals_vec);
+        s_vec = _mm_add_ps(tmp_vec, s_vec);
+        
+        _mm_store_ps(&tmp[i+8], tmp_vec);
+
+        i_float = (float)i+12;
+        ivals_vec = _mm_set_ps(i_float, i_float+1, i_float+2, i_float+3);
+        b_vec = _mm_load_ps(&b[i+12]);
+        tmp_vec = _mm_add_ps(b_vec, ivals_vec);
+        s_vec = _mm_add_ps(tmp_vec, s_vec);
+        
+        _mm_store_ps(&tmp[i+12], tmp_vec);
     }
     // HADDPS trouvé à https://stackoverflow.com/questions/6996764/fastest-way-to-do-horizontal-sse-vector-sum-or-other-reduction
     __m128 shuf   = _mm_shuffle_ps(s_vec, s_vec, _MM_SHUFFLE(2, 3, 0, 1));  // [ C D | A B ]
@@ -43,10 +67,19 @@ void kernel(unsigned n, float * restrict a, const float * restrict b)
 
     const float inv_s = 1 / s;
     const __m128 inv_s_vec = _mm_load1_ps(&inv_s);
-    for (i = 0; i < stop_boucle; i+=4)
+    for (i = 0; i < stop_boucle; i+=16)
     {
         tmp_vec = _mm_load_ps(&tmp[i]);
         _mm_store_ps(&a[i], _mm_mul_ps(tmp_vec, inv_s_vec));
+
+         tmp_vec = _mm_load_ps(&tmp[i+4]);
+        _mm_store_ps(&a[i+4], _mm_mul_ps(tmp_vec, inv_s_vec));
+
+         tmp_vec = _mm_load_ps(&tmp[i+8]);
+        _mm_store_ps(&a[i+8], _mm_mul_ps(tmp_vec, inv_s_vec));
+
+         tmp_vec = _mm_load_ps(&tmp[i+12]);
+        _mm_store_ps(&a[i+12], _mm_mul_ps(tmp_vec, inv_s_vec));
     }
     for (; i < n; i++)
         a[i] = tmp[i] * inv_s;
