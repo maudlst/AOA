@@ -1,5 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#ifdef __AVX__
+  #include <immintrin.h>
+#else
+  #warning AVX is not available. Code will not compile!
+#endif
+
+#ifdef __SSE2__
+  #include <emmintrin.h>
+#else
+  #warning SSE2 is not available. Code will not compile!
+#endif
 
 void kernel(unsigned n, float a[n], const float b[n])
 {
@@ -14,24 +25,28 @@ void kernel(unsigned n, float a[n], const float b[n])
         tmp[i+3] = i+3 + b[i+3];
         s += tmp[i] + tmp[i+1] + tmp[i+2] + tmp[i+3];
     }
- 
-    for(; i < n; i++)
+    for(i = n - 4 ; i < n; i++)
     {
         tmp[i] = i + b[i];
         s += tmp[i];
     }
+    __m128 tmp_vec;
+
     const float inv_s = 1 / s;
-    for (i = 0; i < n - 4; i = i+4)
+    const __m128 inv_s_vec = _mm_set_ps(inv_s, inv_s, inv_s, inv_s);
+    for (i = 0; i < n - 16 ; i+=16)
     {
-        a[i] = tmp[i] * inv_s;
-        a[i+1] = tmp[i+1] * inv_s;
-        a[i+2] = tmp[i+2] * inv_s;
-        a[i+3] = tmp[i+3] * inv_s;
+        tmp_vec = _mm_load_ps(&tmp[i]);
+        _mm_store_ps(&a[i], _mm_mul_ps(tmp_vec, inv_s_vec));
+        tmp_vec = _mm_load_ps(&tmp[i+4]);
+        _mm_store_ps(&a[i+4], _mm_mul_ps(tmp_vec, inv_s_vec));
+        tmp_vec = _mm_load_ps(&tmp[i+8]);
+        _mm_store_ps(&a[i+8], _mm_mul_ps(tmp_vec, inv_s_vec));
+        tmp_vec = _mm_load_ps(&tmp[i+12]);
+        _mm_store_ps(&a[i+12], _mm_mul_ps(tmp_vec, inv_s_vec));
     }
-    for(; i < n; i++)
-    {    
+    for (; i < n; i++)
         a[i] = tmp[i] * inv_s;
-    }
     free(tmp);
 }
 
