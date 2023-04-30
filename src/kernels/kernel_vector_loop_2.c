@@ -1,10 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#ifdef __AVX__
-  #include <immintrin.h>
-#else
-  #warning AVX is not available. Code will not compile!
-#endif
 
 #ifdef __SSE2__
   #include <emmintrin.h>
@@ -12,11 +7,11 @@
   #warning SSE2 is not available. Code will not compile!
 #endif
 
-void kernel(unsigned n, float a[n], const float b[n])
+void kernel(unsigned n, float * restrict a, const float * restrict b)
 {
     unsigned i;
     float s = 0.0f;
-    float *tmp = aligned_alloc(8, n * sizeof(*tmp));
+    float *tmp = aligned_alloc(16, n * sizeof(*tmp));
     for (i = 0; i < n; i++)
     {
         tmp[i] = i + b[i];
@@ -26,12 +21,12 @@ void kernel(unsigned n, float a[n], const float b[n])
 
     const float inv_s = 1 / s;
     const __m128 inv_s_vec = _mm_set_ps(inv_s, inv_s, inv_s, inv_s);
-    for (i = 0; i < n; i+=4)
+    const int stop_boucle = n - 4;
+    for (i = 0; i < stop_boucle; i += 4)
     {
         tmp_vec = _mm_load_ps(&tmp[i]);
         _mm_store_ps(&a[i], _mm_mul_ps(tmp_vec, inv_s_vec));
     }
-    i = i - 4;
     for (; i < n; i++)
         a[i] = tmp[i] * inv_s;
     free(tmp);
