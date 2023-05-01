@@ -4,7 +4,7 @@ endif
 ifeq ($(origin CC), default)
 CC = gcc
 endif
-FLAGS = -Wall -g
+FLAGS = -Wall -g -fopenmp -funroll-loops
 NO_OPTFLAGS = -O2
 OPTFLAGS ?= -O2
 KERNEL ?= kernel.c
