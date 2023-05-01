@@ -135,11 +135,11 @@ if (obj) {
 <!-- ========================== Summary about the loop ========================== -->
   <table id="object_summary" style="width:100%;border: 1px solid var(--table_border);border-radius:5px;color:var(--header_font);background:var(--header_background);margin-bottom:15px;">
     <tr>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_7.html';" title="" tooltip_id="0" >Prev</button></th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_4.html';" title="" tooltip_id="0" >Prev</button></th>
       <th>Loop Id: 3</th>
       <th>Module: measure</th>
-      <th>Source: kernel_vectorized_loops.c:62-65</th>
-      <th>Coverage: 0.04%</th>
+      <th>Source: kernel_vectorized_loops.c:38-41</th>
+      <th>Coverage: 0.03%</th>
       <th><button class="tooltip-maqao-button" title="" tooltip_id="1" style="cursor: not-allowed;">No Next</button></th>
     </tr>
   </table>
@@ -206,16 +206,16 @@ if (obj) {
 <div class="panelcontent" id="OV_panel_asm"><div>
   <div id="enable_groups_button" class="tooltip-maqao" title="" tooltip_id="4" data-groups="off" onclick="enable_groups (this);">Show groups analysis</div>
   <table style="width:100%;" id="table_asm">
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="62" onclick="asm_on_click_line('#panel_src_line_62')"><td class="panel_asm_62" style="word-break:break-all;"><pre>0x1630 MOV	%EAX,%EDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="64" onclick="asm_on_click_line('#panel_src_line_64')"><td class="panel_asm_64" style="word-break:break-all;"><pre>0x1632 PXOR	%XMM1,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="62" onclick="asm_on_click_line('#panel_src_line_62')"><td class="panel_asm_62" style="word-break:break-all;"><pre>0x1636 ADD	$0x1,%EAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="64" onclick="asm_on_click_line('#panel_src_line_64')"><td class="panel_asm_64" style="word-break:break-all;"><pre>0x1639 CVTSI2SS	%RDX,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="64" onclick="asm_on_click_line('#panel_src_line_64')"><td class="panel_asm_64" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="5"><pre>0x163e ADDSS	(%R12,%RSI,1),%XMM1    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="64" onclick="asm_on_click_line('#panel_src_line_64')"><td class="panel_asm_64" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x1644 MOVSS	%XMM1,(%RDI,%RSI,1)    [2]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="65" onclick="asm_on_click_line('#panel_src_line_65')"><td class="panel_asm_65" style="word-break:break-all;"><pre>0x1649 ADDSS	%XMM1,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="62" onclick="asm_on_click_line('#panel_src_line_62')"><td class="panel_asm_62" style="word-break:break-all;"><pre>0x164d ADD	$0x4,%RSI</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="62" onclick="asm_on_click_line('#panel_src_line_62')"><td class="panel_asm_62" style="word-break:break-all;"><pre>0x1651 CMP	%EAX,%EBP</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="62" onclick="asm_on_click_line('#panel_src_line_62')"><td class="panel_asm_62" style="word-break:break-all;"><pre>0x1653 JA	1630</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="38" onclick="asm_on_click_line('#panel_src_line_38')"><td class="panel_asm_38" style="word-break:break-all;"><pre>0x1558 MOV	%EAX,%EDX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="40" onclick="asm_on_click_line('#panel_src_line_40')"><td class="panel_asm_40" style="word-break:break-all;"><pre>0x155a PXOR	%XMM0,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="38" onclick="asm_on_click_line('#panel_src_line_38')"><td class="panel_asm_38" style="word-break:break-all;"><pre>0x155e ADD	$0x1,%EAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="40" onclick="asm_on_click_line('#panel_src_line_40')"><td class="panel_asm_40" style="word-break:break-all;"><pre>0x1561 CVTSI2SS	%RDX,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="40" onclick="asm_on_click_line('#panel_src_line_40')"><td class="panel_asm_40" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="5"><pre>0x1566 ADDSS	(%R12,%RCX,1),%XMM0    [1]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="40" onclick="asm_on_click_line('#panel_src_line_40')"><td class="panel_asm_40" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x156c MOVSS	%XMM0,(%RDI,%RCX,1)    [2]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="41" onclick="asm_on_click_line('#panel_src_line_41')"><td class="panel_asm_41" style="word-break:break-all;"><pre>0x1571 ADDSS	%XMM0,%XMM1</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="38" onclick="asm_on_click_line('#panel_src_line_38')"><td class="panel_asm_38" style="word-break:break-all;"><pre>0x1575 ADD	$0x4,%RCX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="38" onclick="asm_on_click_line('#panel_src_line_38')"><td class="panel_asm_38" style="word-break:break-all;"><pre>0x1579 CMP	%EAX,%EBX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="38" onclick="asm_on_click_line('#panel_src_line_38')"><td class="panel_asm_38" style="word-break:break-all;"><pre>0x157b JA	1558</pre></td></tr>
   </table>
   <script>
 function panel_asm_onmouseover_tr (obj) {
@@ -309,13 +309,13 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
 </div></div>
 <div class="panelcontent" id="OV_panel_src">
   <table id="panel_src_table_src" style="width:100%;">
-<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>/home/m/AOA/src/kernels/kernel_vectorized_loops.c: 62 - 65</pre></td></tr>
+<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>/home/m/AOA/src/kernels/kernel_vectorized_loops.c: 38 - 41</pre></td></tr>
 <tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>--------------------------------------------------------------------------------</pre></td></tr>
 <tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre></pre></td></tr>
-<tr class="panel_src_62" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="62" id="panel_src_line_62"><td><pre>62:     for (; i &lt; n; i++)</pre></td></tr>
-<tr class="panel_src_63" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="63" id="panel_src_line_63"><td><pre>63:     {</pre></td></tr>
-<tr class="panel_src_64" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="64" id="panel_src_line_64"><td><pre>64:         tmp[i] = i + b[i];</pre></td></tr>
-<tr class="panel_src_65" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="65" id="panel_src_line_65"><td><pre>65:         s += tmp[i];</pre></td></tr>
+<tr class="panel_src_38" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="38" id="panel_src_line_38"><td><pre>38:     for (; i &lt; n; i++)</pre></td></tr>
+<tr class="panel_src_39" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="39" id="panel_src_line_39"><td><pre>39:     {</pre></td></tr>
+<tr class="panel_src_40" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="40" id="panel_src_line_40"><td><pre>40:         tmp[i] = i + b[i];</pre></td></tr>
+<tr class="panel_src_41" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="41" id="panel_src_line_41"><td><pre>41:         s += tmp[i];</pre></td></tr>
   </table>
   <script>
 function panel_src_onmouseover_tr (obj) {
@@ -431,8 +431,8 @@ function set_ldbal_input () {
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.04, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -552,13 +552,13 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_0_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -679,14 +679,14 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_1_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.04, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -806,13 +806,13 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_0_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -933,14 +933,14 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_1_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.04, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1060,13 +1060,13 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_0_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -1187,7 +1187,7 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_1_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
 }
@@ -1227,7 +1227,7 @@ function ldbal_loadhelp (divId) {
             <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.45</td></tr>
             <tr><td>Bottlenecks</td><td></td></tr>
             <tr><td>Function</td><td>kernel</td></tr>
-            <tr><td>Source</td><td>kernel_vectorized_loops.c:62-65</td></tr>
+            <tr><td>Source</td><td>kernel_vectorized_loops.c:38-41</td></tr>
             <tr><td>Source loop unroll info</td><td>not unrolled or unrolled with no peel/tail loop</td></tr>
             <tr><td>Source loop unroll confidence level</td><td>max</td></tr>
             <tr><td>Unroll/vectorization loop type</td><td>NA</td></tr>
@@ -1299,7 +1299,7 @@ function ldbal_loadhelp (divId) {
             <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.45</td></tr>
             <tr><td>Bottlenecks</td><td></td></tr>
             <tr><td>Function</td><td>kernel</td></tr>
-            <tr><td>Source</td><td>kernel_vectorized_loops.c:62-65</td></tr>
+            <tr><td>Source</td><td>kernel_vectorized_loops.c:38-41</td></tr>
             <tr><td>Source loop unroll info</td><td>not unrolled or unrolled with no peel/tail loop</td></tr>
             <tr><td>Source loop unroll confidence level</td><td>max</td></tr>
             <tr><td>Unroll/vectorization loop type</td><td>NA</td></tr>
@@ -1399,10 +1399,10 @@ function cqa_adv_loadhelp (divId) {
       <div style="padding-left:10px;margin-bottom: 10px;">
         <table>
           <tr><td class="_td_shift_20">Function</td><td><a href="../functions/measure_7.html">kernel</a></td></tr>
-          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:62-65</td></tr>
+          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:38-41</td></tr>
         <tr><td class="_td_shift_20">Module</td><td>measure</td></tr>
         </table>
-The loop is defined in /home/m/AOA/src/kernels/kernel_vectorized_loops.c:62-65.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
+The loop is defined in /home/m/AOA/src/kernels/kernel_vectorized_loops.c:38-41.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
       <li class="_tab_header_li selected_tab" data-tab="tab0-1" onclick="change_tab (this, 'tab0-')">gain</li>
@@ -1490,9 +1490,9 @@ FIT IN UOP CACHE
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
 <div class="_content">Found no such bottlenecks.
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 1632
+<div class="_content">In the binary file, the address of the loop is: 155a
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM1,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RDX,%XMM1</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%R12,%RSI,1),%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM1,(%RDI,%RSI,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM1,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RSI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%EBP</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1630 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RDX,%XMM0</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%R12,%RCX,1),%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,(%RDI,%RCX,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RCX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%EBX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1558 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
@@ -1500,10 +1500,10 @@ FIT IN UOP CACHE
       <div style="padding-left:10px;margin-bottom: 10px;">
         <table>
           <tr><td class="_td_shift_20">Function</td><td><a href="../functions/measure_7.html">kernel</a></td></tr>
-          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:62-65</td></tr>
+          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:38-41</td></tr>
         <tr><td class="_td_shift_20">Module</td><td>measure</td></tr>
         </table>
-The loop is defined in /home/m/AOA/src/kernels/kernel_vectorized_loops.c:62-65.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
+The loop is defined in /home/m/AOA/src/kernels/kernel_vectorized_loops.c:38-41.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
       <li class="_tab_header_li selected_tab" data-tab="tab1-1" onclick="change_tab (this, 'tab1-')">gain</li>
@@ -1591,9 +1591,9 @@ FIT IN UOP CACHE
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
 <div class="_content">Found no such bottlenecks.
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 1632
+<div class="_content">In the binary file, the address of the loop is: 155a
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM1,%XMM1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RDX,%XMM1</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%R12,%RSI,1),%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM1,(%RDI,%RSI,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM1,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RSI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%EBP</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1630 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RDX,%XMM0</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%R12,%RCX,1),%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,(%RDI,%RCX,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RCX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%EBX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1558 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
@@ -1975,7 +1975,7 @@ addLoadEvent(function(){
     </div>
   </div>
 </div><script>
-var tooltips_texts = ['Go to previous loop: 7',
+var tooltips_texts = ['Go to previous loop: 4',
 'No next loop',
 'Open on a new tab',
 'Open on a new tab',

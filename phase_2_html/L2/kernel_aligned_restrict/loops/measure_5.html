@@ -140,7 +140,7 @@ if (obj) {
       <th>Module: measure</th>
       <th>Source: kernel_aligned_restrict.c:24-25</th>
       <th>Coverage: 0.01%</th>
-      <th><button class="tooltip-maqao-button" title="" tooltip_id="1" style="cursor: not-allowed;">No Next</button></th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_0.html';" title="" tooltip_id="1" >Next</button></th>
     </tr>
   </table>
   <div class="drag-container" id="main_section_content">
@@ -374,7 +374,7 @@ function src_loadhelp (divId) {
   </style>
 </div>
 <div class="panelcontent" id="OV_panel_callchains">
-<div class="_div_table" ><table id="_treed_table_2" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="9">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="10">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="11">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="12">Module</th></tr>
+<div class="_div_table" ><table id="_treed_table_3" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="9">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="10">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="11">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="12">Module</th></tr>
 </table></div>
   <script>
 function src_onresize () {
@@ -406,10 +406,10 @@ function src_loadhelp (divId) {
       <td style="width:40%;" />
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_16" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_24" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_17" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_25" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
@@ -419,15 +419,15 @@ function set_ldbal_input () {
   document.getElementById ("main_section_div").dataset.ldbal = selector_type.value;
   document.getElementById ("main_section_div").dataset.run = selector_run.value;
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_16").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_16").getBoundingClientRect().width);
-  document.getElementById("chart_cat_17").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_17").getBoundingClientRect().width);
+  document.getElementById("chart_cat_24").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_24").getBoundingClientRect().width);
+  document.getElementById("chart_cat_25").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_25").getBoundingClientRect().width);
   // According to selectors, draw both charts
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1407_1407'];
+    var ordinals = ['DESKTOP-Q28565A_24854_24854'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -443,7 +443,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_16')
+    const svg = d3.select('#chart_cat_24')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -499,13 +499,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_16')
+      .attr('id', 'zoom_chart_24')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_16_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_24_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -547,14 +547,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_16_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1407_1407.html");
+  $("#zoom_chart_24_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_24854_24854.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1407_1407'];
+    var ordinals = ['DESKTOP-Q28565A_24854_24854'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -570,7 +570,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_17')
+    const svg = d3.select('#chart_cat_25')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -626,13 +626,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_17')
+      .attr('id', 'zoom_chart_25')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_17_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_25_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -674,14 +674,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_17_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1407_1407.html");
+  $("#zoom_chart_25_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_24854_24854.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1407_1407'];
+    var ordinals = ['DESKTOP-Q28565A_24854_24854'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -697,7 +697,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_16')
+    const svg = d3.select('#chart_cat_24')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -753,13 +753,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_16')
+      .attr('id', 'zoom_chart_24')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_16_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_24_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -801,14 +801,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_16_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1407_1407.html");
+  $("#zoom_chart_24_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_24854_24854.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1407_1407'];
+    var ordinals = ['DESKTOP-Q28565A_24854_24854'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -824,7 +824,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_17')
+    const svg = d3.select('#chart_cat_25')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -880,13 +880,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_17')
+      .attr('id', 'zoom_chart_25')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_17_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_25_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -928,14 +928,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_17_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1407_1407.html");
+  $("#zoom_chart_25_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_24854_24854.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1407_1407'];
+    var ordinals = ['DESKTOP-Q28565A_24854_24854'];
     var data = [{value: 0.01, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -951,7 +951,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_16')
+    const svg = d3.select('#chart_cat_24')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1007,13 +1007,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_16')
+      .attr('id', 'zoom_chart_24')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_16_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_24_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1055,14 +1055,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_16_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1407_1407.html");
+  $("#zoom_chart_24_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_24854_24854.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1407_1407'];
+    var ordinals = ['DESKTOP-Q28565A_24854_24854'];
     var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
@@ -1078,7 +1078,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_17')
+    const svg = d3.select('#chart_cat_25')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1134,13 +1134,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_17')
+      .attr('id', 'zoom_chart_25')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_17_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_25_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1182,8 +1182,8 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_17_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1407_1407.html");
+  $("#zoom_chart_25_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_24854_24854.html");
   });
   }
 }
@@ -1401,14 +1401,14 @@ function cqa_adv_loadhelp (divId) {
 The loop is defined in /home/m/AOA/src/kernels/kernel_aligned_restrict.c:24-25.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab4-1" onclick="change_tab (this, 'tab4-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab4-2" onclick="change_tab (this, 'tab4-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab4-3" onclick="change_tab (this, 'tab4-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab4-4" onclick="change_tab (this, 'tab4-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab6-1" onclick="change_tab (this, 'tab6-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab6-2" onclick="change_tab (this, 'tab6-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab6-3" onclick="change_tab (this, 'tab6-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab6-4" onclick="change_tab (this, 'tab6-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab4-1">
+  <div id="tab6-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
 By removing them, you can lower the cost of an iteration from 2.25 to 1.75 cycles (1.29x speedup).
@@ -1431,9 +1431,9 @@ for(i) a[i].x = b[i].x; (slow, non stride 1) =&gt; for(i) a.x[i] = b.x[i]; (fast
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
 <div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
 </div></div></div>
-  <div id="tab4-2">
+  <div id="tab6-2">
 No data for this section</div>
-  <div id="tab4-3">
+  <div id="tab6-3">
 <div class="_fixed_box" ><h3 class="_header">CALL instructions</h3>
 <div class="_content">Detected function call instructions.
 
@@ -1469,7 +1469,7 @@ The binary loop is storing 4 bytes (1 single precision FP elements).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
 </div></div></div></div></div>
-  <div id="tab4-4">
+  <div id="tab6-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
 <div class="_content"><table><tr><td>nb instructions</td><td>8</td></tr><tr><td>nb uops</td><td>9</td></tr><tr><td>loop length</td><td>35</td></tr><tr><td>used x86 registers</td><td>3</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>1</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
@@ -1516,14 +1516,14 @@ By removing all these bottlenecks, you can lower the cost of an iteration from 2
 The loop is defined in /home/m/AOA/src/kernels/kernel_aligned_restrict.c:24-25.<br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab5-1" onclick="change_tab (this, 'tab5-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab5-2" onclick="change_tab (this, 'tab5-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab5-3" onclick="change_tab (this, 'tab5-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab5-4" onclick="change_tab (this, 'tab5-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab7-1" onclick="change_tab (this, 'tab7-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab7-2" onclick="change_tab (this, 'tab7-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab7-3" onclick="change_tab (this, 'tab7-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab7-4" onclick="change_tab (this, 'tab7-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab5-1">
+  <div id="tab7-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
 By removing them, you can lower the cost of an iteration from 2.25 to 1.75 cycles (1.29x speedup).
@@ -1546,9 +1546,9 @@ for(i) a[i].x = b[i].x; (slow, non stride 1) =&gt; for(i) a.x[i] = b.x[i]; (fast
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
 <div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
 </div></div></div>
-  <div id="tab5-2">
+  <div id="tab7-2">
 No data for this section</div>
-  <div id="tab5-3">
+  <div id="tab7-3">
 <div class="_fixed_box" ><h3 class="_header">CALL instructions</h3>
 <div class="_content">Detected function call instructions.
 
@@ -1584,7 +1584,7 @@ The binary loop is storing 4 bytes (1 single precision FP elements).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
 </div></div></div></div></div>
-  <div id="tab5-4">
+  <div id="tab7-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
 <div class="_content"><table><tr><td>nb instructions</td><td>8</td></tr><tr><td>nb uops</td><td>9</td></tr><tr><td>loop length</td><td>35</td></tr><tr><td>used x86 registers</td><td>3</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>1</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
@@ -2000,7 +2000,7 @@ addLoadEvent(function(){
   </div>
 </div><script>
 var tooltips_texts = ['Go to previous loop: 4',
-'No next loop',
+'Go to next loop: 0',
 'Open on a new tab',
 'Open on a new tab',
 'Check the box to display the group analysis. A group is a set of instructions accessing to the same memory area',

@@ -135,12 +135,12 @@ if (obj) {
 <!-- ========================== Summary about the loop ========================== -->
   <table id="object_summary" style="width:100%;border: 1px solid var(--table_border);border-radius:5px;color:var(--header_font);background:var(--header_background);margin-bottom:15px;">
     <tr>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_4.html';" title="" tooltip_id="0" >Prev</button></th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_5.html';" title="" tooltip_id="0" >Prev</button></th>
       <th>Loop Id: 3</th>
       <th>Module: measure</th>
       <th>Source: kernel_deroulage.c:18-21</th>
-      <th>Coverage: 0.02%</th>
-      <th><button class="tooltip-maqao-button" title="" tooltip_id="1" style="cursor: not-allowed;">No Next</button></th>
+      <th>Coverage: 0.06%</th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_7.html';" title="" tooltip_id="1" >Next</button></th>
     </tr>
   </table>
   <div class="drag-container" id="main_section_content">
@@ -206,16 +206,16 @@ if (obj) {
 <div class="panelcontent" id="OV_panel_asm"><div>
   <div id="enable_groups_button" class="tooltip-maqao" title="" tooltip_id="4" data-groups="off" onclick="enable_groups (this);">Show groups analysis</div>
   <table style="width:100%;" id="table_asm">
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x1560 MOV	%EAX,%ESI</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="word-break:break-all;"><pre>0x1562 PXOR	%XMM0,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x1566 ADD	$0x1,%EAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="word-break:break-all;"><pre>0x1569 CVTSI2SS	%RSI,%XMM0</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="5"><pre>0x156e ADDSS	(%RBP,%RDX,1),%XMM0    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x1574 MOVSS	%XMM0,(%RDI,%RDX,1)    [2]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="21" onclick="asm_on_click_line('#panel_src_line_21')"><td class="panel_asm_21" style="word-break:break-all;"><pre>0x1579 ADDSS	%XMM0,%XMM2</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x157d ADD	$0x4,%RDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x1581 CMP	%EAX,%R12D</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x1584 JA	1560</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x1578 MOV	%EAX,%ESI</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="word-break:break-all;"><pre>0x157a PXOR	%XMM0,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x157e ADD	$0x1,%EAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="word-break:break-all;"><pre>0x1581 CVTSI2SS	%RSI,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="5"><pre>0x1586 ADDSS	(%RBP,%RDX,1),%XMM0    [1]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="20" onclick="asm_on_click_line('#panel_src_line_20')"><td class="panel_asm_20" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x158c MOVSS	%XMM0,(%RDI,%RDX,1)    [2]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="21" onclick="asm_on_click_line('#panel_src_line_21')"><td class="panel_asm_21" style="word-break:break-all;"><pre>0x1591 ADDSS	%XMM0,%XMM2</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x1595 ADD	$0x4,%RDX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x1599 CMP	%EAX,%R12D</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="18" onclick="asm_on_click_line('#panel_src_line_18')"><td class="panel_asm_18" style="word-break:break-all;"><pre>0x159c JA	1578</pre></td></tr>
   </table>
   <script>
 function panel_asm_onmouseover_tr (obj) {
@@ -314,8 +314,8 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
 <tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre></pre></td></tr>
 <tr class="panel_src_18" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="18" id="panel_src_line_18"><td><pre>18:     for(; i &lt; n; i++)</pre></td></tr>
 <tr class="panel_src_19" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="19" id="panel_src_line_19"><td><pre>19:     {</pre></td></tr>
-<tr class="panel_src_20" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="20" id="panel_src_line_20"><td><pre>20: 	tmp[i] = i + b[i];</pre></td></tr>
-<tr class="panel_src_21" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="21" id="panel_src_line_21"><td><pre>21: 	s += tmp[i];</pre></td></tr>
+<tr class="panel_src_20" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="20" id="panel_src_line_20"><td><pre>20:         tmp[i] = i + b[i];</pre></td></tr>
+<tr class="panel_src_21" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="21" id="panel_src_line_21"><td><pre>21:         s += tmp[i];</pre></td></tr>
   </table>
   <script>
 function panel_src_onmouseover_tr (obj) {
@@ -431,8 +431,8 @@ function set_ldbal_input () {
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1694_1694'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_24934_24934'];
+    var data = [{value: 0.06, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -552,14 +552,14 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_0_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1694_1694.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_24934_24934.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1694_1694'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_24934_24934'];
+    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -679,14 +679,14 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_1_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1694_1694.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_24934_24934.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1694_1694'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_24934_24934'];
+    var data = [{value: 0.06, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -806,14 +806,14 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_0_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1694_1694.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_24934_24934.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1694_1694'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_24934_24934'];
+    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -933,14 +933,14 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_1_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1694_1694.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_24934_24934.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1694_1694'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_24934_24934'];
+    var data = [{value: 0.06, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1060,14 +1060,14 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_0_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1694_1694.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_24934_24934.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_1694_1694'];
-    var data = [{value: 0, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_24934_24934'];
+    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1187,7 +1187,7 @@ function set_ldbal_input () {
     }
   });
   $("#zoom_chart_1_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_1694_1694.html");
+    window.open("../topo/run_0_DESKTOP-Q28565A_24934_24934.html");
   });
   }
 }
@@ -1490,9 +1490,9 @@ FIT IN UOP CACHE
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
 <div class="_content">Found no such bottlenecks.
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 1562
+<div class="_content">In the binary file, the address of the loop is: 157a
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%ESI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RSI,%XMM0</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%RBP,%RDX,1),%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,(%RDI,%RDX,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM0,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%R12D</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1560 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%ESI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RSI,%XMM0</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%RBP,%RDX,1),%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,(%RDI,%RDX,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM0,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%R12D</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1578 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
@@ -1591,9 +1591,9 @@ FIT IN UOP CACHE
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
 <div class="_content">Found no such bottlenecks.
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 1562
+<div class="_content">In the binary file, the address of the loop is: 157a
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%ESI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RSI,%XMM0</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%RBP,%RDX,1),%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,(%RDI,%RDX,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM0,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%R12D</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1560 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%ESI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>PXOR %XMM0,%XMM0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x1,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CVTSI2SS %RSI,%XMM0</td><td>3</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>8</td><td>2</td></tr><tr><td style='word-break:break-all;'>ADDSS (%RBP,%RDX,1),%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVSS %XMM0,(%RDI,%RDX,1)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>ADDSS %XMM0,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%R12D</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1578 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
@@ -1975,8 +1975,8 @@ addLoadEvent(function(){
     </div>
   </div>
 </div><script>
-var tooltips_texts = ['Go to previous loop: 4',
-'No next loop',
+var tooltips_texts = ['Go to previous loop: 5',
+'Go to next loop: 7',
 'Open on a new tab',
 'Open on a new tab',
 'Check the box to display the group analysis. A group is a set of instructions accessing to the same memory area',

@@ -139,8 +139,8 @@ if (obj) {
 <th>Function: __libc_free</th>
       <th>Module: libc-2.31.so</th>
       <th>Source: Not Available</th>
-      <th>Coverage: 0.16%</th>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_8.html';" title="" tooltip_id="1" >Next</button></th>
+      <th>Coverage: 0.21%</th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='libc-2.31.so_587.html';" title="" tooltip_id="1" >Next</button></th>
     </tr>
   </table>
   <div class="drag-container" id="main_section_content">
@@ -363,7 +363,7 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
   </style>
 </div></div>
 <div class="panelcontent" id="OV_panel_callchains">
-<div class="_div_table" ><table id="_treed_table_6" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9">Module</th></tr>
+<div class="_div_table" ><table id="_treed_table_4" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9">Module</th></tr>
 </table></div>
   <script>
 function src_onresize () {
@@ -395,10 +395,10 @@ function src_loadhelp (divId) {
       <td style="width:40%;" />
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_40" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_32" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_41" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_33" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
@@ -408,16 +408,16 @@ function set_ldbal_input () {
   document.getElementById ("main_section_div").dataset.ldbal = selector_type.value;
   document.getElementById ("main_section_div").dataset.run = selector_run.value;
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_40").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_40").getBoundingClientRect().width);
-  document.getElementById("chart_cat_41").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_41").getBoundingClientRect().width);
+  document.getElementById("chart_cat_32").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_32").getBoundingClientRect().width);
+  document.getElementById("chart_cat_33").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_33").getBoundingClientRect().width);
   // According to selectors, draw both charts
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.16, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.21, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -432,7 +432,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_40')
+    const svg = d3.select('#chart_cat_32')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -488,13 +488,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_40')
+      .attr('id', 'zoom_chart_32')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_40_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_32_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -536,15 +536,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_40_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_32_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -559,7 +559,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_41')
+    const svg = d3.select('#chart_cat_33')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -615,13 +615,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_41')
+      .attr('id', 'zoom_chart_33')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_41_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_33_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -663,15 +663,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_41_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_33_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.16, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.21, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -686,7 +686,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_40')
+    const svg = d3.select('#chart_cat_32')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -742,13 +742,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_40')
+      .attr('id', 'zoom_chart_32')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_40_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_32_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -790,15 +790,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_40_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_32_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -813,7 +813,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_41')
+    const svg = d3.select('#chart_cat_33')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -869,13 +869,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_41')
+      .attr('id', 'zoom_chart_33')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_41_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_33_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -917,15 +917,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_41_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_33_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.16, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.21, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -940,7 +940,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_40')
+    const svg = d3.select('#chart_cat_32')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -996,13 +996,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_40')
+      .attr('id', 'zoom_chart_32')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_40_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_32_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1044,15 +1044,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_40_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_32_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 0.02, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 0.03, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1067,7 +1067,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_41')
+    const svg = d3.select('#chart_cat_33')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1123,13 +1123,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_41')
+      .attr('id', 'zoom_chart_33')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_41_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_33_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1171,8 +1171,8 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_41_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_33_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
 }
@@ -1223,8 +1223,8 @@ function cqa_loadhelp (divId) {
   </script>
 </div>
 <div class="panelcontent" id="OV_panel_loops">
-<div class="_div_table" ><table id="_treed_table_7" class="_treed_table"><tr><th class="_freezed_row  _left ">Name</th><th class="_freezed_row ">Coverage (%)</th><th class="_freezed_row ">Time (s)</th></tr>
-<tr id="_tr_7_1" ><td id="_tr_7_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:3px;" >&#x25CB;</span>__libc_free</td><td id="_tr_7_1-2"  data-_i="1" data-_j="2"  class=" _centered"  style="width:15%;" >0.16</td><td id="_tr_7_1-3"  data-_i="1" data-_j="3"  class=" _centered"  style="width:15%;" >0.02</td></tr>
+<div class="_div_table" ><table id="_treed_table_5" class="_treed_table"><tr><th class="_freezed_row  _left ">Name</th><th class="_freezed_row ">Coverage (%)</th><th class="_freezed_row ">Time (s)</th></tr>
+<tr id="_tr_5_1" ><td id="_tr_5_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:3px;" >&#x25CB;</span>__libc_free</td><td id="_tr_5_1-2"  data-_i="1" data-_j="2"  class=" _centered"  style="width:15%;" >0.21</td><td id="_tr_5_1-3"  data-_i="1" data-_j="3"  class=" _centered"  style="width:15%;" >0.03</td></tr>
 </table></div>
   <script>
 function loops_onresize () {
@@ -1602,7 +1602,7 @@ addLoadEvent(function(){
   </div>
 </div><script>
 var tooltips_texts = ['Go to previous function: pthread_attr_setschedparam',
-'Go to next function: init_array',
+'Go to next function: __libc_malloc',
 'Open on a new tab',
 'Open on a new tab',
 'Source code of the loop.<br/>It is extracted using MAQAO core.',
