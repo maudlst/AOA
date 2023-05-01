@@ -139,7 +139,7 @@ if (obj) {
 <th>Function: kernel</th>
       <th>Module: measure</th>
       <th>Source: kernel_aligned_restrict.c:5-18</th>
-      <th>Coverage: 98.49%</th>
+      <th>Coverage: 98.91%</th>
       <th><button class="tooltip-maqao-button" onclick="window.location.href='libc.so.6_240.html';" title="" tooltip_id="1" >Next</button></th>
     </tr>
   </table>
@@ -421,7 +421,7 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
   </style>
 </div></div>
 <div class="panelcontent" id="OV_panel_callchains">
-<div class="_div_table" ><table id="_treed_table_17" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9">Module</th></tr>
+<div class="_div_table" ><table id="_treed_table_11" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="6">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="7">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="8">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="9">Module</th></tr>
 </table></div>
   <script>
 function src_onresize () {
@@ -453,10 +453,10 @@ function src_loadhelp (divId) {
       <td style="width:40%;" />
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_80" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_56" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_81" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_57" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
@@ -466,16 +466,16 @@ function set_ldbal_input () {
   document.getElementById ("main_section_div").dataset.ldbal = selector_type.value;
   document.getElementById ("main_section_div").dataset.run = selector_run.value;
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_80").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_80").getBoundingClientRect().width);
-  document.getElementById("chart_cat_81").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_81").getBoundingClientRect().width);
+  document.getElementById("chart_cat_56").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_56").getBoundingClientRect().width);
+  document.getElementById("chart_cat_57").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_57").getBoundingClientRect().width);
   // According to selectors, draw both charts
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['paul_9318_9318'];
-    var data = [{value: 98.49, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['paul_13117_13117'];
+    var data = [{value: 98.91, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -490,7 +490,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_80')
+    const svg = d3.select('#chart_cat_56')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -546,13 +546,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_80')
+      .attr('id', 'zoom_chart_56')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_80_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_56_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -594,15 +594,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_80_0").click( function () {
-    window.open("../topo/run_0_paul_9318_9318.html");
+  $("#zoom_chart_56_0").click( function () {
+    window.open("../topo/run_0_paul_13117_13117.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['paul_9318_9318'];
-    var data = [{value: 7.82, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['paul_13117_13117'];
+    var data = [{value: 7.27, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -617,7 +617,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_81')
+    const svg = d3.select('#chart_cat_57')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -673,13 +673,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_81')
+      .attr('id', 'zoom_chart_57')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_81_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_57_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -721,15 +721,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_81_0").click( function () {
-    window.open("../topo/run_0_paul_9318_9318.html");
+  $("#zoom_chart_57_0").click( function () {
+    window.open("../topo/run_0_paul_13117_13117.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['paul_9318_9318'];
-    var data = [{value: 98.49, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['paul_13117_13117'];
+    var data = [{value: 98.91, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -744,7 +744,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_80')
+    const svg = d3.select('#chart_cat_56')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -800,13 +800,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_80')
+      .attr('id', 'zoom_chart_56')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_80_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_56_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -848,15 +848,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_80_0").click( function () {
-    window.open("../topo/run_0_paul_9318_9318.html");
+  $("#zoom_chart_56_0").click( function () {
+    window.open("../topo/run_0_paul_13117_13117.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['paul_9318_9318'];
-    var data = [{value: 7.82, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['paul_13117_13117'];
+    var data = [{value: 7.27, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -871,7 +871,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_81')
+    const svg = d3.select('#chart_cat_57')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -927,13 +927,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_81')
+      .attr('id', 'zoom_chart_57')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_81_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_57_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -975,15 +975,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_81_0").click( function () {
-    window.open("../topo/run_0_paul_9318_9318.html");
+  $("#zoom_chart_57_0").click( function () {
+    window.open("../topo/run_0_paul_13117_13117.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['paul_9318_9318'];
-    var data = [{value: 98.49, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['paul_13117_13117'];
+    var data = [{value: 98.91, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -998,7 +998,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_80')
+    const svg = d3.select('#chart_cat_56')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1054,13 +1054,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_80')
+      .attr('id', 'zoom_chart_56')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_80_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_56_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1102,15 +1102,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_80_0").click( function () {
-    window.open("../topo/run_0_paul_9318_9318.html");
+  $("#zoom_chart_56_0").click( function () {
+    window.open("../topo/run_0_paul_13117_13117.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['paul_9318_9318'];
-    var data = [{value: 7.82, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['paul_13117_13117'];
+    var data = [{value: 7.27, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1125,7 +1125,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_81')
+    const svg = d3.select('#chart_cat_57')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1181,13 +1181,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_81')
+      .attr('id', 'zoom_chart_57')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_81_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_57_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1229,8 +1229,8 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_81_0").click( function () {
-    window.open("../topo/run_0_paul_9318_9318.html");
+  $("#zoom_chart_57_0").click( function () {
+    window.open("../topo/run_0_paul_13117_13117.html");
   });
   }
 }
@@ -1272,14 +1272,14 @@ function ldbal_loadhelp (divId) {
         <br />The function is defined in /home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernels/kernel_aligned_restrict.c:5-18.<br /><br />Warnings:<br />Ignoring paths for analysis<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab11-1" onclick="change_tab (this, 'tab11-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab11-2" onclick="change_tab (this, 'tab11-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab11-3" onclick="change_tab (this, 'tab11-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab11-4" onclick="change_tab (this, 'tab11-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab6-1" onclick="change_tab (this, 'tab6-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab6-2" onclick="change_tab (this, 'tab6-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab6-3" onclick="change_tab (this, 'tab6-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab6-4" onclick="change_tab (this, 'tab6-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab11-1">
+  <div id="tab6-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
 By removing them, you can lower the cost of an iteration from 7.25 to 2.50 cycles (2.90x speedup).
@@ -1299,9 +1299,9 @@ Since your execution units are vector units, only a vectorized function can use 
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
 <div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
 </div></div></div>
-  <div id="tab11-2">
+  <div id="tab6-2">
 No data for this section</div>
-  <div id="tab11-3">
+  <div id="tab6-3">
 <div class="_fixed_box" ><h3 class="_header">CALL instructions</h3>
 <div class="_content">Detected function call instructions.
 
@@ -1317,7 +1317,7 @@ No data for this section</div>
 </div></div><div class="_fixed_box" ><h3 class="_header">Arithmetic intensity</h3>
 <div class="_content">Arithmetic intensity is 0.25 FP operations per loaded or stored byte.
 </div></div></div>
-  <div id="tab11-4">
+  <div id="tab6-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
 <div class="_content"><table><tr><td>nb instructions</td><td>29</td></tr><tr><td>nb uops</td><td>29</td></tr><tr><td>loop length</td><td>101</td></tr><tr><td>used x86 registers</td><td>10</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>2</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
@@ -1363,14 +1363,14 @@ By removing all these bottlenecks, you can lower the cost of an iteration from 7
         <br />The function is defined in /home/paul/Bureau/iatic4/sem2/aoa/code/AOA/src/kernels/kernel_aligned_restrict.c:5-18.<br /><br />Warnings:<br />Ignoring paths for analysis<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab12-1" onclick="change_tab (this, 'tab12-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab12-2" onclick="change_tab (this, 'tab12-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab12-3" onclick="change_tab (this, 'tab12-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab12-4" onclick="change_tab (this, 'tab12-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab7-1" onclick="change_tab (this, 'tab7-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab7-2" onclick="change_tab (this, 'tab7-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab7-3" onclick="change_tab (this, 'tab7-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab7-4" onclick="change_tab (this, 'tab7-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab12-1">
+  <div id="tab7-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
 By removing them, you can lower the cost of an iteration from 7.25 to 2.50 cycles (2.90x speedup).
@@ -1390,9 +1390,9 @@ Since your execution units are vector units, only a vectorized function can use 
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
 <div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
 </div></div></div>
-  <div id="tab12-2">
+  <div id="tab7-2">
 No data for this section</div>
-  <div id="tab12-3">
+  <div id="tab7-3">
 <div class="_fixed_box" ><h3 class="_header">CALL instructions</h3>
 <div class="_content">Detected function call instructions.
 
@@ -1408,7 +1408,7 @@ No data for this section</div>
 </div></div><div class="_fixed_box" ><h3 class="_header">Arithmetic intensity</h3>
 <div class="_content">Arithmetic intensity is 0.25 FP operations per loaded or stored byte.
 </div></div></div>
-  <div id="tab12-4">
+  <div id="tab7-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
 <div class="_content"><table><tr><td>nb instructions</td><td>29</td></tr><tr><td>nb uops</td><td>29</td></tr><tr><td>loop length</td><td>101</td></tr><tr><td>used x86 registers</td><td>10</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>2</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
@@ -1464,13 +1464,13 @@ function cqa_loadhelp (divId) {
   </script>
 </div>
 <div class="panelcontent" id="OV_panel_loops">
-<div class="_div_table" ><table id="_treed_table_18" class="_treed_table"><tr><th class="_freezed_row  _left ">Name</th><th class="_freezed_row ">Coverage (%)</th><th class="_freezed_row ">Time (s)</th></tr>
-<tr id="_tr_18_1" ><td id="_tr_18_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:70%;" ><span onclick="_click_treed(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BC;</span>kernel<span onclick="_click_expand(this)" class="span_expand">&#8211;</span></td><td id="_tr_18_1-2"  data-_i="1" data-_j="2"  class=" _centered"  style="width:15%;" >98.49</td><td id="_tr_18_1-3"  data-_i="1" data-_j="3"  class=" _centered"  style="width:15%;" >7.82</td></tr>
-<tr class="_tr_18_1"  id="_tr_18_1_1"  ondblclick="_action_26(this,2,-1, '../loops/measure_3.html');"  style="cursor:pointer;"><td id="_tr_18_1_1-1"  data-_i="2" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span>Loop 3 - kernel_aligned_restrict.c:9-12 - measure</td><td id="_tr_18_1_1-2"  data-_i="2" data-_j="2"  class=" _centered"  style="width:15%;" >65.49</td><td id="_tr_18_1_1-3"  data-_i="2" data-_j="3"  class=" _centered"  style="width:15%;" >5.2</td></tr>
-<tr class="_tr_18_1"  id="_tr_18_1_2"  ondblclick="_action_26(this,3,-1, '../loops/measure_4.html');"  style="cursor:pointer;"><td id="_tr_18_1_2-1"  data-_i="3" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span>Loop 4 - kernel_aligned_restrict.c:15-16 - measure</td><td id="_tr_18_1_2-2"  data-_i="3" data-_j="2"  class=" _centered"  style="width:15%;" >32.87</td><td id="_tr_18_1_2-3"  data-_i="3" data-_j="3"  class=" _centered"  style="width:15%;" >2.61</td></tr>
+<div class="_div_table" ><table id="_treed_table_12" class="_treed_table"><tr><th class="_freezed_row  _left ">Name</th><th class="_freezed_row ">Coverage (%)</th><th class="_freezed_row ">Time (s)</th></tr>
+<tr id="_tr_12_1" ><td id="_tr_12_1-1"  data-_i="1" data-_j="1"  class=" _left"  style="width:70%;" ><span onclick="_click_treed(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BC;</span>kernel<span onclick="_click_expand(this)" class="span_expand">&#8211;</span></td><td id="_tr_12_1-2"  data-_i="1" data-_j="2"  class=" _centered"  style="width:15%;" >98.91</td><td id="_tr_12_1-3"  data-_i="1" data-_j="3"  class=" _centered"  style="width:15%;" >7.27</td></tr>
+<tr class="_tr_12_1"  id="_tr_12_1_1"  ondblclick="_action_17(this,2,-1, '../loops/measure_3.html');"  style="cursor:pointer;"><td id="_tr_12_1_1-1"  data-_i="2" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span>Loop 3 - kernel_aligned_restrict.c:9-12 - measure</td><td id="_tr_12_1_1-2"  data-_i="2" data-_j="2"  class=" _centered"  style="width:15%;" >68.23</td><td id="_tr_12_1_1-3"  data-_i="2" data-_j="3"  class=" _centered"  style="width:15%;" >5.01</td></tr>
+<tr class="_tr_12_1"  id="_tr_12_1_2"  ondblclick="_action_17(this,3,-1, '../loops/measure_4.html');"  style="cursor:pointer;"><td id="_tr_12_1_2-1"  data-_i="3" data-_j="1"  class=" _left"  style="width:70%;" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span>Loop 4 - kernel_aligned_restrict.c:15-16 - measure</td><td id="_tr_12_1_2-2"  data-_i="3" data-_j="2"  class=" _centered"  style="width:15%;" >30.61</td><td id="_tr_12_1_2-3"  data-_i="3" data-_j="3"  class=" _centered"  style="width:15%;" >2.25</td></tr>
 </table></div>
 <script>
-function _action_26 (obj, i, j, p){
+function _action_17 (obj, i, j, p){
            open(""+p+"");
 }
 </script>
