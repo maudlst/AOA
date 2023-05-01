@@ -138,9 +138,9 @@ if (obj) {
       <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_6.html';" title="" tooltip_id="0" >Prev</button></th>
       <th>Loop Id: 5</th>
       <th>Module: measure</th>
-      <th>Source: <span class="tooltip-maqao" title="" tooltip_id="1" >kernel_vectorized_loops.c:70-81 [...]</span></th>
-      <th>Coverage: 25.92%</th>
-      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_7.html';" title="" tooltip_id="2" >Next</button></th>
+      <th>Source: <span class="tooltip-maqao" title="" tooltip_id="1" >kernel_vectorized_loops.c:46-48 [...]</span></th>
+      <th>Coverage: 24.64%</th>
+      <th><button class="tooltip-maqao-button" onclick="window.location.href='measure_4.html';" title="" tooltip_id="2" >Next</button></th>
     </tr>
   </table>
   <div class="drag-container" id="main_section_content">
@@ -206,25 +206,13 @@ if (obj) {
 <div class="panelcontent" id="OV_panel_asm"><div>
   <div id="enable_groups_button" class="tooltip-maqao" title="" tooltip_id="5" data-groups="off" onclick="enable_groups (this);">Show groups analysis</div>
   <table style="width:100%;" id="table_asm">
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="72" onclick="asm_on_click_line('#panel_src_line_72')"><td class="panel_asm_72" style="word-break:break-all;"><pre>0x1670 MOV	%EAX,%EDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x1672 MOVAPS	(%RDI,%RDX,4),%XMM1    [2]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="word-break:break-all;"><pre>0x1676 MULPS	%XMM0,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="976" onclick="asm_on_click_line('#panel_src_line_976')"><td class="panel_asm_976" style="background-color:#b3ccff;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="7"><pre>0x1679 MOVAPS	%XMM1,(%RBX,%RDX,4)    [3]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="75" onclick="asm_on_click_line('#panel_src_line_75')"><td class="panel_asm_75" style="word-break:break-all;"><pre>0x167d LEA	0x4(%RAX),%EDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="background-color:#d9ffb3;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="8"><pre>0x1680 MOVAPS	(%RDI,%RDX,4),%XMM1    [4]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="word-break:break-all;"><pre>0x1684 MULPS	%XMM0,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="976" onclick="asm_on_click_line('#panel_src_line_976')"><td class="panel_asm_976" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="9"><pre>0x1687 MOVAPS	%XMM1,(%RBX,%RDX,4)    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="78" onclick="asm_on_click_line('#panel_src_line_78')"><td class="panel_asm_78" style="word-break:break-all;"><pre>0x168b LEA	0x8(%RAX),%EDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="background-color:#d9ffb3;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="10"><pre>0x168e MOVAPS	(%RDI,%RDX,4),%XMM1    [4]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="word-break:break-all;"><pre>0x1692 MULPS	%XMM0,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="976" onclick="asm_on_click_line('#panel_src_line_976')"><td class="panel_asm_976" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="11"><pre>0x1695 MOVAPS	%XMM1,(%RBX,%RDX,4)    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="81" onclick="asm_on_click_line('#panel_src_line_81')"><td class="panel_asm_81" style="word-break:break-all;"><pre>0x1699 LEA	0xc(%RAX),%EDX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="70" onclick="asm_on_click_line('#panel_src_line_70')"><td class="panel_asm_70" style="word-break:break-all;"><pre>0x169c ADD	$0x10,%EAX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="background-color:#d9ffb3;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="12"><pre>0x169f MOVAPS	(%RDI,%RDX,4),%XMM1    [4]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="word-break:break-all;"><pre>0x16a3 MULPS	%XMM0,%XMM1</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="976" onclick="asm_on_click_line('#panel_src_line_976')"><td class="panel_asm_976" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="13"><pre>0x16a6 MOVAPS	%XMM1,(%RBX,%RDX,4)    [1]</pre></span></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="70" onclick="asm_on_click_line('#panel_src_line_70')"><td class="panel_asm_70" style="word-break:break-all;"><pre>0x16aa CMP	%EAX,%ECX</pre></td></tr>
-<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="70" onclick="asm_on_click_line('#panel_src_line_70')"><td class="panel_asm_70" style="word-break:break-all;"><pre>0x16ac JA	1670</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="48" onclick="asm_on_click_line('#panel_src_line_48')"><td class="panel_asm_48" style="word-break:break-all;"><pre>0x1590 MOV	%EAX,%EDX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="46" onclick="asm_on_click_line('#panel_src_line_46')"><td class="panel_asm_46" style="word-break:break-all;"><pre>0x1592 ADD	$0x4,%EAX</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="background-color:#d98c8c;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="6"><pre>0x1595 MOVAPS	(%RDI,%RDX,4),%XMM0    [1]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="198" onclick="asm_on_click_line('#panel_src_line_198')"><td class="panel_asm_198" style="word-break:break-all;"><pre>0x1599 MULPS	%XMM1,%XMM0</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="976" onclick="asm_on_click_line('#panel_src_line_976')"><td class="panel_asm_976" style="background-color:#ffb366;word-break:break-all;"><span class="tooltip-maqao" title="" tooltip_id="7"><pre>0x159c MOVAPS	%XMM0,(%RBP,%RDX,4)    [2]</pre></span></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="46" onclick="asm_on_click_line('#panel_src_line_46')"><td class="panel_asm_46" style="word-break:break-all;"><pre>0x15a1 CMP	%EAX,%ESI</pre></td></tr>
+<tr onmouseover="panel_asm_onmouseover_tr (this)" onmouseout="panel_asm_onmouseout_tr (this)" data-src="46" onclick="asm_on_click_line('#panel_src_line_46')"><td class="panel_asm_46" style="word-break:break-all;"><pre>0x15a3 JA	1590</pre></td></tr>
   </table>
   <script>
 function panel_asm_onmouseover_tr (obj) {
@@ -249,7 +237,7 @@ function asm_onresize () {
 function asm_loadhelp (divId) {
   var e = document.getElementById (divId);
   if (e != null) {
-    e.setAttribute ("tooltip_id", "14");
+    e.setAttribute ("tooltip_id", "8");
   }
 }
 function enable_groups (div) {
@@ -324,21 +312,12 @@ for (var i = 0, row; row = table_asm.rows[i]; i++) {
 <tr class="panel_src_198" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="198" id="panel_src_line_198"><td><pre>198:   return (__m128) ((__v4sf)__A * (__v4sf)__B);</pre></td></tr>
 <tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>[...]</pre></td></tr>
 <tr class="panel_src_976" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="976" id="panel_src_line_976"><td><pre>976:   *(__m128 *)__P = __A;</pre></td></tr>
-<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>/home/m/AOA/src/kernels/kernel_vectorized_loops.c: 70 - 81</pre></td></tr>
+<tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>/home/m/AOA/src/kernels/kernel_vectorized_loops.c: 46 - 48</pre></td></tr>
 <tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre>--------------------------------------------------------------------------------</pre></td></tr>
 <tr class="panel_src_nil" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="nil" id="panel_src_line_nil"><td><pre></pre></td></tr>
-<tr class="panel_src_70" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="70" id="panel_src_line_70"><td><pre>70:     for (i = 0; i &lt; stop_boucle; i+=16)</pre></td></tr>
-<tr class="panel_src_71" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="71" id="panel_src_line_71"><td><pre>71:     {</pre></td></tr>
-<tr class="panel_src_72" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="72" id="panel_src_line_72"><td><pre>72:         tmp_vec = _mm_load_ps(&amp;tmp[i]);</pre></td></tr>
-<tr class="panel_src_73" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="73" id="panel_src_line_73"><td><pre>73:         _mm_store_ps(&amp;a[i], _mm_mul_ps(tmp_vec, inv_s_vec));</pre></td></tr>
-<tr class="panel_src_74" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="74" id="panel_src_line_74"><td><pre>74: </pre></td></tr>
-<tr class="panel_src_75" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="75" id="panel_src_line_75"><td><pre>75:          tmp_vec = _mm_load_ps(&amp;tmp[i+4]);</pre></td></tr>
-<tr class="panel_src_76" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="76" id="panel_src_line_76"><td><pre>76:         _mm_store_ps(&amp;a[i+4], _mm_mul_ps(tmp_vec, inv_s_vec));</pre></td></tr>
-<tr class="panel_src_77" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="77" id="panel_src_line_77"><td><pre>77: </pre></td></tr>
-<tr class="panel_src_78" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="78" id="panel_src_line_78"><td><pre>78:          tmp_vec = _mm_load_ps(&amp;tmp[i+8]);</pre></td></tr>
-<tr class="panel_src_79" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="79" id="panel_src_line_79"><td><pre>79:         _mm_store_ps(&amp;a[i+8], _mm_mul_ps(tmp_vec, inv_s_vec));</pre></td></tr>
-<tr class="panel_src_80" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="80" id="panel_src_line_80"><td><pre>80: </pre></td></tr>
-<tr class="panel_src_81" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="81" id="panel_src_line_81"><td><pre>81:          tmp_vec = _mm_load_ps(&amp;tmp[i+12]);</pre></td></tr>
+<tr class="panel_src_46" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="46" id="panel_src_line_46"><td><pre>46:     for (i = 0; i &lt; stop_boucle; i+=4)</pre></td></tr>
+<tr class="panel_src_47" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="47" id="panel_src_line_47"><td><pre>47:     {</pre></td></tr>
+<tr class="panel_src_48" onclick="panel_src_onclick (this);" onmouseover="panel_src_onmouseover_tr (this)" onmouseout="panel_src_onmouseout_tr (this)" data-src="48" id="panel_src_line_48"><td><pre>48:         tmp_vec = _mm_load_ps(&amp;tmp[i]);</pre></td></tr>
   </table>
   <script>
 function panel_src_onmouseover_tr (obj) {
@@ -387,7 +366,7 @@ function src_onresize () {
 function src_loadhelp (divId) {
   var e = document.getElementById (divId);
   if (e != null) {
-    e.setAttribute ("tooltip_id", "15");
+    e.setAttribute ("tooltip_id", "9");
   }
 }
   </script>
@@ -401,7 +380,7 @@ function src_loadhelp (divId) {
   </style>
 </div>
 <div class="panelcontent" id="OV_panel_callchains">
-<div class="_div_table" ><table id="_treed_table_1" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="16">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="17">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="18">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="19">Module</th></tr>
+<div class="_div_table" ><table id="_treed_table_2" class="_treed_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="10">Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="11">Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="12">Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="13">Module</th></tr>
 </table></div>
   <script>
 function src_onresize () {
@@ -409,7 +388,7 @@ function src_onresize () {
 function src_loadhelp (divId) {
   var e = document.getElementById (divId);
   if (e != null) {
-    e.setAttribute ("tooltip_id", "20");
+    e.setAttribute ("tooltip_id", "14");
   }
 }
   </script>
@@ -433,10 +412,10 @@ function src_loadhelp (divId) {
       <td style="width:40%;" />
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_8" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_16" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_9" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_17" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
   <script>
@@ -446,16 +425,16 @@ function set_ldbal_input () {
   document.getElementById ("main_section_div").dataset.ldbal = selector_type.value;
   document.getElementById ("main_section_div").dataset.run = selector_run.value;
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_8").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_8").getBoundingClientRect().width);
-  document.getElementById("chart_cat_9").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_9").getBoundingClientRect().width);
+  document.getElementById("chart_cat_16").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_16").getBoundingClientRect().width);
+  document.getElementById("chart_cat_17").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_17").getBoundingClientRect().width);
   // According to selectors, draw both charts
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 25.92, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 24.64, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -470,7 +449,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_8')
+    const svg = d3.select('#chart_cat_16')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -526,13 +505,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_8')
+      .attr('id', 'zoom_chart_16')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_8_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_16_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -574,15 +553,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_8_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_16_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "regular"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 3.31, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 3.55, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -597,7 +576,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_9')
+    const svg = d3.select('#chart_cat_17')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -653,13 +632,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_9')
+      .attr('id', 'zoom_chart_17')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_9_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_17_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -701,15 +680,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_9_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_17_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 25.92, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 24.64, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -724,7 +703,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_8')
+    const svg = d3.select('#chart_cat_16')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -780,13 +759,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_8')
+      .attr('id', 'zoom_chart_16')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_8_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_16_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -828,15 +807,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_8_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_16_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "sorted"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 3.31, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 3.55, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -851,7 +830,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_9')
+    const svg = d3.select('#chart_cat_17')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -907,13 +886,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_9')
+      .attr('id', 'zoom_chart_17')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_9_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_17_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -955,15 +934,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_9_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_17_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 25.92, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 24.64, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -978,7 +957,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_8')
+    const svg = d3.select('#chart_cat_16')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1034,13 +1013,13 @@ function set_ldbal_input () {
       .text("Coverage (%)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_8')
+      .attr('id', 'zoom_chart_16')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_8_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_16_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1082,15 +1061,15 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_8_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_16_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
   if (selector_type.value == "all"
   &&  selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['DESKTOP-Q28565A_2510_2510'];
-    var data = [{value: 3.31, offset: 0, i: 0, color: "#333399"}];
+    var ordinals = ['DESKTOP-Q28565A_25054_25054'];
+    var data = [{value: 3.55, offset: 0, i: 0, color: "#333399"}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 480;
@@ -1105,7 +1084,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_9')
+    const svg = d3.select('#chart_cat_17')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -1161,13 +1140,13 @@ function set_ldbal_input () {
       .text("Time (s)");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_9')
+      .attr('id', 'zoom_chart_17')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_9_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_17_'+i;})
       .attr('x', function(d, i){
         return xScale(d.i) - xBand.bandwidth()*0.9/2
       })
@@ -1209,8 +1188,8 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_9_0").click( function () {
-    window.open("../topo/run_0_DESKTOP-Q28565A_2510_2510.html");
+  $("#zoom_chart_17_0").click( function () {
+    window.open("../topo/run_0_DESKTOP-Q28565A_25054_25054.html");
   });
   }
 }
@@ -1222,7 +1201,7 @@ function ldbal_onresize (panelId) {
 function ldbal_loadhelp (divId) {
   var e = document.getElementById (divId);
   if (e != null) {
-    e.setAttribute ("tooltip_id", "21");
+    e.setAttribute ("tooltip_id", "15");
   }
 }
   </script>
@@ -1232,10 +1211,10 @@ function ldbal_loadhelp (divId) {
     <table style="width:100%;text-align:center;">
       <tr>
         <td>
-          <button type="button" class="tooltip-maqao-button" title="" tooltip_id="22" onclick="set_previous_path ();">&#8592;</button>
+          <button type="button" class="tooltip-maqao-button" title="" tooltip_id="16" onclick="set_previous_path ();">&#8592;</button>
         </td>
-        <td style="border-bottom: 1px solid var(--fixed_box_borders);">Path <input id="path_selection_adv_input" type="number" min="0" max="1" value="0" style="width:35px;"> / <span id="path_selection_adv_input_max"></span><button type="button" class="tooltip-maqao-button" title="" tooltip_id="23" style="margin-left: 10px;" onclick="set_path_input ('path_selection_adv_input')" >OK</button></td>
-        <td><button type="button" class="tooltip-maqao-button" title="" tooltip_id="24" onclick="set_next_path ();">&#8594;</button></td>
+        <td style="border-bottom: 1px solid var(--fixed_box_borders);">Path <input id="path_selection_adv_input" type="number" min="0" max="1" value="0" style="width:35px;"> / <span id="path_selection_adv_input_max"></span><button type="button" class="tooltip-maqao-button" title="" tooltip_id="17" style="margin-left: 10px;" onclick="set_path_input ('path_selection_adv_input')" >OK</button></td>
+        <td><button type="button" class="tooltip-maqao-button" title="" tooltip_id="18" onclick="set_next_path ();">&#8594;</button></td>
       </tr>
     </table>
   </div>
@@ -1243,52 +1222,52 @@ function ldbal_loadhelp (divId) {
     <div id="loop_static_path_0" style="width:100%;">
       <table style="width:100%;">
         <tr><th>Metric</th><th>Value</th></tr>
-            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.13</td></tr>
-            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FFCC99;">1.13</td></tr>
+            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.20</td></tr>
+            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FFCC99;">1.50</td></tr>
             <tr><td>CQA speedup if fully vectorized</td><td style="background-color:#FF950E;">2.00</td></tr>
             <tr><td>CQA speedup if no inter-iteration dependency</td><td>NA</td></tr>
-            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.13</td></tr>
+            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.50</td></tr>
             <tr><td>Bottlenecks</td><td>micro-operation queue, </td></tr>
             <tr><td>Function</td><td>kernel</td></tr>
-            <tr><td>Source</td><td>xmmintrin.h:198-976,kernel_vectorized_loops.c:70-81</td></tr>
+            <tr><td>Source</td><td>xmmintrin.h:198-976,kernel_vectorized_loops.c:46-48</td></tr>
             <tr><td>Source loop unroll info</td><td>not unrolled or unrolled with no peel/tail loop</td></tr>
             <tr><td>Source loop unroll confidence level</td><td>max</td></tr>
             <tr><td>Unroll/vectorization loop type</td><td>NA</td></tr>
             <tr><td>Unroll factor</td><td>NA</td></tr>
-            <tr><td>CQA cycles</td><td>4.50</td></tr>
-            <tr><td>CQA cycles if no scalar integer</td><td>4.00</td></tr>
-            <tr><td>CQA cycles if FP arith vectorized</td><td>4.00</td></tr>
-            <tr><td>CQA cycles if fully vectorized</td><td>2.25</td></tr>
-            <tr><td>Front-end cycles</td><td style="background-color:#FFCC99;">4.50</td></tr>
-            <tr><td>DIV/SQRT cycles</td><td>2.50</td></tr>
-            <tr><td>P0 cycles</td><td>2.50</td></tr>
-            <tr><td>P1 cycles</td><td>2.67</td></tr>
-            <tr><td>P2 cycles</td><td>2.67</td></tr>
-            <tr><td>P3 cycles</td><td>4.00</td></tr>
-            <tr><td>P4 cycles</td><td>2.00</td></tr>
-            <tr><td>P5 cycles</td><td>2.00</td></tr>
-            <tr><td>P6 cycles</td><td>2.67</td></tr>
+            <tr><td>CQA cycles</td><td>1.50</td></tr>
+            <tr><td>CQA cycles if no scalar integer</td><td>1.25</td></tr>
+            <tr><td>CQA cycles if FP arith vectorized</td><td>1.00</td></tr>
+            <tr><td>CQA cycles if fully vectorized</td><td>0.75</td></tr>
+            <tr><td>Front-end cycles</td><td style="background-color:#FFCC99;">1.50</td></tr>
+            <tr><td>DIV/SQRT cycles</td><td>1.00</td></tr>
+            <tr><td>P0 cycles</td><td>0.75</td></tr>
+            <tr><td>P1 cycles</td><td>0.83</td></tr>
+            <tr><td>P2 cycles</td><td>0.50</td></tr>
+            <tr><td>P3 cycles</td><td>1.00</td></tr>
+            <tr><td>P4 cycles</td><td>0.75</td></tr>
+            <tr><td>P5 cycles</td><td>0.50</td></tr>
+            <tr><td>P6 cycles</td><td>0.67</td></tr>
             <tr><td>P7 cycles</td><td>0.00</td></tr>
             <tr><td>Inter-iter dependencies cycles</td><td>1</td></tr>
             <tr><td>FE+BE cycles (UFS)</td><td>NA</td></tr>
             <tr><td>Stall cycles (UFS)</td><td>NA</td></tr>
-            <tr><td>Nb insns</td><td>19.00</td></tr>
-            <tr><td>Nb uops</td><td>18.00</td></tr>
-            <tr><td>Nb loads</td><td>4.00</td></tr>
-            <tr><td>Nb stores</td><td>4.00</td></tr>
+            <tr><td>Nb insns</td><td>7.00</td></tr>
+            <tr><td>Nb uops</td><td>6.00</td></tr>
+            <tr><td>Nb loads</td><td>1.00</td></tr>
+            <tr><td>Nb stores</td><td>1.00</td></tr>
             <tr><td>Nb stack references</td><td style="background-color:#66cc00;">0.00</td></tr>
-            <tr><td>FLOP/cycle</td><td>3.56</td></tr>
+            <tr><td>FLOP/cycle</td><td>2.67</td></tr>
             <tr><td>Nb FLOP add-sub</td><td>0.00</td></tr>
-            <tr><td>Nb FLOP mul</td><td>16.00</td></tr>
+            <tr><td>Nb FLOP mul</td><td>4.00</td></tr>
             <tr><td>Nb FLOP fma</td><td>0.00</td></tr>
             <tr><td>Nb FLOP div</td><td>0.00</td></tr>
             <tr><td>Nb FLOP rcp</td><td>0.00</td></tr>
             <tr><td>Nb FLOP sqrt</td><td>0.00</td></tr>
             <tr><td>Nb FLOP rsqrt</td><td>0.00</td></tr>
-            <tr><td>Bytes/cycle</td><td>28.44</td></tr>
+            <tr><td>Bytes/cycle</td><td>21.33</td></tr>
             <tr><td>Bytes prefetched</td><td>0.00</td></tr>
-            <tr><td>Bytes loaded</td><td>64.00</td></tr>
-            <tr><td>Bytes stored</td><td>64.00</td></tr>
+            <tr><td>Bytes loaded</td><td>16.00</td></tr>
+            <tr><td>Bytes stored</td><td>16.00</td></tr>
             <tr><td>Stride 0</td><td>2.00</td></tr>
             <tr><td>Stride 1</td><td>0.00</td></tr>
             <tr><td>Stride n</td><td>0.00</td></tr>
@@ -1315,52 +1294,52 @@ function ldbal_loadhelp (divId) {
     <div id="loop_static_path_1" style="width:100%;">
       <table style="width:100%;">
         <tr><th>Metric</th><th>Value</th></tr>
-            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.13</td></tr>
-            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FFCC99;">1.13</td></tr>
+            <tr><td>CQA speedup if no scalar integer</td><td style="background-color:#FFCC99;">1.20</td></tr>
+            <tr><td>CQA speedup if FP arith vectorized</td><td style="background-color:#FFCC99;">1.50</td></tr>
             <tr><td>CQA speedup if fully vectorized</td><td style="background-color:#FF950E;">2.00</td></tr>
             <tr><td>CQA speedup if no inter-iteration dependency</td><td>NA</td></tr>
-            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.13</td></tr>
+            <tr><td>CQA speedup if next bottleneck killed</td><td style="background-color:#FFCC99;">1.50</td></tr>
             <tr><td>Bottlenecks</td><td>micro-operation queue, </td></tr>
             <tr><td>Function</td><td>kernel</td></tr>
-            <tr><td>Source</td><td>xmmintrin.h:198-976,kernel_vectorized_loops.c:70-81</td></tr>
+            <tr><td>Source</td><td>xmmintrin.h:198-976,kernel_vectorized_loops.c:46-48</td></tr>
             <tr><td>Source loop unroll info</td><td>not unrolled or unrolled with no peel/tail loop</td></tr>
             <tr><td>Source loop unroll confidence level</td><td>max</td></tr>
             <tr><td>Unroll/vectorization loop type</td><td>NA</td></tr>
             <tr><td>Unroll factor</td><td>NA</td></tr>
-            <tr><td>CQA cycles</td><td>4.50</td></tr>
-            <tr><td>CQA cycles if no scalar integer</td><td>4.00</td></tr>
-            <tr><td>CQA cycles if FP arith vectorized</td><td>4.00</td></tr>
-            <tr><td>CQA cycles if fully vectorized</td><td>2.25</td></tr>
-            <tr><td>Front-end cycles</td><td style="background-color:#FFCC99;">4.50</td></tr>
-            <tr><td>DIV/SQRT cycles</td><td>2.50</td></tr>
-            <tr><td>P0 cycles</td><td>2.50</td></tr>
-            <tr><td>P1 cycles</td><td>2.67</td></tr>
-            <tr><td>P2 cycles</td><td>2.67</td></tr>
-            <tr><td>P3 cycles</td><td>4.00</td></tr>
-            <tr><td>P4 cycles</td><td>2.00</td></tr>
-            <tr><td>P5 cycles</td><td>2.00</td></tr>
-            <tr><td>P6 cycles</td><td>2.67</td></tr>
+            <tr><td>CQA cycles</td><td>1.50</td></tr>
+            <tr><td>CQA cycles if no scalar integer</td><td>1.25</td></tr>
+            <tr><td>CQA cycles if FP arith vectorized</td><td>1.00</td></tr>
+            <tr><td>CQA cycles if fully vectorized</td><td>0.75</td></tr>
+            <tr><td>Front-end cycles</td><td style="background-color:#FFCC99;">1.50</td></tr>
+            <tr><td>DIV/SQRT cycles</td><td>1.00</td></tr>
+            <tr><td>P0 cycles</td><td>0.75</td></tr>
+            <tr><td>P1 cycles</td><td>0.83</td></tr>
+            <tr><td>P2 cycles</td><td>0.50</td></tr>
+            <tr><td>P3 cycles</td><td>1.00</td></tr>
+            <tr><td>P4 cycles</td><td>0.75</td></tr>
+            <tr><td>P5 cycles</td><td>0.50</td></tr>
+            <tr><td>P6 cycles</td><td>0.67</td></tr>
             <tr><td>P7 cycles</td><td>0.00</td></tr>
             <tr><td>Inter-iter dependencies cycles</td><td>1</td></tr>
             <tr><td>FE+BE cycles (UFS)</td><td>NA</td></tr>
             <tr><td>Stall cycles (UFS)</td><td>NA</td></tr>
-            <tr><td>Nb insns</td><td>19.00</td></tr>
-            <tr><td>Nb uops</td><td>18.00</td></tr>
-            <tr><td>Nb loads</td><td>4.00</td></tr>
-            <tr><td>Nb stores</td><td>4.00</td></tr>
+            <tr><td>Nb insns</td><td>7.00</td></tr>
+            <tr><td>Nb uops</td><td>6.00</td></tr>
+            <tr><td>Nb loads</td><td>1.00</td></tr>
+            <tr><td>Nb stores</td><td>1.00</td></tr>
             <tr><td>Nb stack references</td><td style="background-color:#66cc00;">0.00</td></tr>
-            <tr><td>FLOP/cycle</td><td>3.56</td></tr>
+            <tr><td>FLOP/cycle</td><td>2.67</td></tr>
             <tr><td>Nb FLOP add-sub</td><td>0.00</td></tr>
-            <tr><td>Nb FLOP mul</td><td>16.00</td></tr>
+            <tr><td>Nb FLOP mul</td><td>4.00</td></tr>
             <tr><td>Nb FLOP fma</td><td>0.00</td></tr>
             <tr><td>Nb FLOP div</td><td>0.00</td></tr>
             <tr><td>Nb FLOP rcp</td><td>0.00</td></tr>
             <tr><td>Nb FLOP sqrt</td><td>0.00</td></tr>
             <tr><td>Nb FLOP rsqrt</td><td>0.00</td></tr>
-            <tr><td>Bytes/cycle</td><td>28.44</td></tr>
+            <tr><td>Bytes/cycle</td><td>21.33</td></tr>
             <tr><td>Bytes prefetched</td><td>0.00</td></tr>
-            <tr><td>Bytes loaded</td><td>64.00</td></tr>
-            <tr><td>Bytes stored</td><td>64.00</td></tr>
+            <tr><td>Bytes loaded</td><td>16.00</td></tr>
+            <tr><td>Bytes stored</td><td>16.00</td></tr>
             <tr><td>Stride 0</td><td>2.00</td></tr>
             <tr><td>Stride 1</td><td>0.00</td></tr>
             <tr><td>Stride n</td><td>0.00</td></tr>
@@ -1397,7 +1376,7 @@ function cqa_adv_onresize ()
 function cqa_adv_loadhelp (divId) {
   var e = document.getElementById (divId);
   if (e != null) {
-    e.setAttribute ("tooltip_id", "25");
+    e.setAttribute ("tooltip_id", "19");
   }
 }
   </script>
@@ -1407,10 +1386,10 @@ function cqa_adv_loadhelp (divId) {
     <table style="width:100%;text-align:center;">
       <tr>
         <td>
-          <button type="button" class="tooltip-maqao-button" title="" tooltip_id="26" onclick="set_previous_path ();">&#8592;</button>
+          <button type="button" class="tooltip-maqao-button" title="" tooltip_id="20" onclick="set_previous_path ();">&#8592;</button>
         </td>
-        <td style="border-bottom: 1px solid var(--fixed_box_borders);">Path <input id="path_selection_input" type="number" min="0" max="1" value="0" style="width:35px;"> / <span id="path_selection_input_max"></span><button type="button" class="tooltip-maqao-button" title="" tooltip_id="27" style="margin-left: 10px;" onclick="set_path_input ('path_selection_input')" >OK</button></td>
-        <td><button type="button" class="tooltip-maqao-button" title="" tooltip_id="28" onclick="set_next_path ();">&#8594;</button></td>
+        <td style="border-bottom: 1px solid var(--fixed_box_borders);">Path <input id="path_selection_input" type="number" min="0" max="1" value="0" style="width:35px;"> / <span id="path_selection_input_max"></span><button type="button" class="tooltip-maqao-button" title="" tooltip_id="21" style="margin-left: 10px;" onclick="set_path_input ('path_selection_input')" >OK</button></td>
+        <td><button type="button" class="tooltip-maqao-button" title="" tooltip_id="22" onclick="set_next_path ();">&#8594;</button></td>
       </tr>
     </table>
   </div>
@@ -1422,28 +1401,28 @@ function cqa_adv_loadhelp (divId) {
       <div style="padding-left:10px;margin-bottom: 10px;">
         <table>
           <tr><td class="_td_shift_20">Function</td><td><a href="../functions/measure_7.html">kernel</a></td></tr>
-          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:70-81</td></tr>
+          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:46-48</td></tr>
         <tr><td class="_td_shift_20">Module</td><td>measure</td></tr>
         </table>
-The loop is defined in:<br /><ul><li>/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h:198,976</li><li>/home/m/AOA/src/kernels/kernel_vectorized_loops.c:70-81</li></ul><br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
+The loop is defined in:<br /><ul><li>/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h:198,976</li><li>/home/m/AOA/src/kernels/kernel_vectorized_loops.c:46-48</li></ul><br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab2-1" onclick="change_tab (this, 'tab2-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab2-2" onclick="change_tab (this, 'tab2-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab2-3" onclick="change_tab (this, 'tab2-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab2-4" onclick="change_tab (this, 'tab2-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab4-1" onclick="change_tab (this, 'tab4-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab4-2" onclick="change_tab (this, 'tab4-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab4-3" onclick="change_tab (this, 'tab4-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab4-4" onclick="change_tab (this, 'tab4-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab2-1">
+  <div id="tab4-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
-By removing them, you can lower the cost of an iteration from 4.50 to 4.00 cycles (1.12x speedup).
+By removing them, you can lower the cost of an iteration from 1.50 to 1.25 cycles (1.20x speedup).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content"><ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li></ul>
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Vectorization</h3>
 <div class="_content">Your loop is vectorized, but using only 128 out of 256 bits (SSE/AVX-128 instructions on AVX/AVX2 processors).
-By fully vectorizing your loop, you can lower the cost of an iteration from 4.50 to 2.25 cycles (2.00x speedup).
+By fully vectorizing your loop, you can lower the cost of an iteration from 1.50 to 0.75 cycles (2.00x speedup).
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content">All SSE/AVX instructions are used in vector version (process two or more data elements in vector registers).
 Since your execution units are vector units, only a fully vectorized loop can use their full power.
@@ -1455,51 +1434,51 @@ CQA target is Core_7x_V1 (Intel Kaby Lake Core Processors) but specialization fl
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
 <div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
 </div></div></div>
-  <div id="tab2-2">
+  <div id="tab4-2">
 No data for this section</div>
-  <div id="tab2-3">
+  <div id="tab4-3">
 <div class="_fixed_box" ><h3 class="_header">Type of elements and instruction set</h3>
-<div class="_content">4 SSE or AVX instructions are processing arithmetic or math operations on single precision FP elements in vector mode (four at a time).
+<div class="_content">1 SSE or AVX instructions are processing arithmetic or math operations on single precision FP elements in vector mode (four at a time).
 
 </div></div><div class="_fixed_box" ><h3 class="_header">Matching between your loop (in the source code) and the binary loop</h3>
-<div class="_content">The binary loop is composed of 16 FP arithmetical operations:
-<ul><li>16: multiply</li></ul>The binary loop is loading 64 bytes (16 single precision FP elements).
-The binary loop is storing 64 bytes (16 single precision FP elements).
+<div class="_content">The binary loop is composed of 4 FP arithmetical operations:
+<ul><li>4: multiply</li></ul>The binary loop is loading 16 bytes (4 single precision FP elements).
+The binary loop is storing 16 bytes (4 single precision FP elements).
 </div></div><div class="_fixed_box" ><h3 class="_header">Arithmetic intensity</h3>
 <div class="_content">Arithmetic intensity is 0.12 FP operations per loaded or stored byte.
 </div></div><div class="_fixed_box" ><h3 class="_header">Unroll opportunity</h3>
-<div class="_content">Loop is data access bound.
+<div class="_content">Loop body is too small to efficiently use resources.
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
+<div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
 </div></div></div></div></div>
-  <div id="tab2-4">
+  <div id="tab4-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
-<div class="_content"><table><tr><td>nb instructions</td><td>19</td></tr><tr><td>nb uops</td><td>18</td></tr><tr><td>loop length</td><td>62</td></tr><tr><td>used x86 registers</td><td>5</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>2</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
+<div class="_content"><table><tr><td>nb instructions</td><td>7</td></tr><tr><td>nb uops</td><td>6</td></tr><tr><td>loop length</td><td>21</td></tr><tr><td>used x86 registers</td><td>5</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>2</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
 <div class="_content">ASSUMED MACRO FUSION
 FIT IN UOP CACHE
-<table><tr><td>micro-operation queue</td><td>4.50 cycles</td></tr><tr><td>front end</td><td>4.50 cycles</td></tr></table>
+<table><tr><td>micro-operation queue</td><td>1.50 cycles</td></tr><tr><td>front end</td><td>1.50 cycles</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Back-end</h3>
-<div class="_content"><table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>2.50</td><td>2.50</td><td>2.67</td><td>2.67</td><td>4.00</td><td>2.00</td><td>2.00</td><td>2.67</td></tr><tr><td>cycles</td><td>2.50</td><td>2.50</td><td>2.67</td><td>2.67</td><td>4.00</td><td>2.00</td><td>2.00</td><td>2.67</td></tr></table>
+<div class="_content"><table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>1.00</td><td>0.75</td><td>0.83</td><td>0.50</td><td>1.00</td><td>0.75</td><td>0.50</td><td>0.67</td></tr><tr><td>cycles</td><td>1.00</td><td>0.75</td><td>0.83</td><td>0.50</td><td>1.00</td><td>0.75</td><td>0.50</td><td>0.67</td></tr></table>
 <table><tr><td>Cycles executing div or sqrt instructions</td><td>NA</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>1.00</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles summary</h3>
-<div class="_content"><table><tr><td>Front-end</td><td>4.50</td></tr><tr><td>Dispatch</td><td>4.00</td></tr><tr><td>Data deps.</td><td>1.00</td></tr><tr><td>Overall L1</td><td>4.50</td></tr></table>
+<div class="_content"><table><tr><td>Front-end</td><td>1.50</td></tr><tr><td>Dispatch</td><td>1.00</td></tr><tr><td>Data deps.</td><td>1.00</td></tr><tr><td>Overall L1</td><td>1.50</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vectorization ratios</h3>
 <div class="_content"><table><tr><td>all</td><td>100%</td></tr><tr><td>load</td><td>100%</td></tr><tr><td>store</td><td>100%</td></tr><tr><td>mul</td><td>100%</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vector efficiency ratios</h3>
 <div class="_content"><table><tr><td>all</td><td>50%</td></tr><tr><td>load</td><td>50%</td></tr><tr><td>store</td><td>50%</td></tr><tr><td>mul</td><td>50%</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles and memory resources usage</h3>
-<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 4.50 cycles. At this rate:
-<ul><li>22% of peak load performance is reached (14.22 out of 64.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>44% of peak store performance is reached (14.22 out of 32.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
+<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 1.50 cycles. At this rate:
+<ul><li>16% of peak load performance is reached (10.67 out of 64.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>33% of peak store performance is reached (10.67 out of 32.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
 <div class="_content">Performance is limited by instruction throughput (loading/decoding program instructions to execution core) (front-end is a bottleneck).
 
-By removing all these bottlenecks, you can lower the cost of an iteration from 4.50 to 4.00 cycles (1.13x speedup).
+By removing all these bottlenecks, you can lower the cost of an iteration from 1.50 to 1.00 cycles (1.50x speedup).
 
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 1670
+<div class="_content">In the binary file, the address of the loop is: 1590
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>LEA 0x4(%RAX),%EDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>LEA 0x8(%RAX),%EDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>LEA 0xc(%RAX),%EDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x10,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%ECX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1670 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM1,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM0,(%RBP,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%ESI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1590 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
@@ -1507,28 +1486,28 @@ By removing all these bottlenecks, you can lower the cost of an iteration from 4
       <div style="padding-left:10px;margin-bottom: 10px;">
         <table>
           <tr><td class="_td_shift_20">Function</td><td><a href="../functions/measure_7.html">kernel</a></td></tr>
-          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:70-81</td></tr>
+          <tr><td class="_td_shift_20">Source file and lines</td><td>kernel_vectorized_loops.c:46-48</td></tr>
         <tr><td class="_td_shift_20">Module</td><td>measure</td></tr>
         </table>
-The loop is defined in:<br /><ul><li>/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h:198,976</li><li>/home/m/AOA/src/kernels/kernel_vectorized_loops.c:70-81</li></ul><br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
+The loop is defined in:<br /><ul><li>/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h:198,976</li><li>/home/m/AOA/src/kernels/kernel_vectorized_loops.c:46-48</li></ul><br /><br />The related source loop is not unrolled or unrolled with no peel/tail loop.<br />      </div><div class="_tab_box">
   <div class="_tab_header">
     <ul>
-      <li class="_tab_header_li selected_tab" data-tab="tab3-1" onclick="change_tab (this, 'tab3-')">gain</li>
-      <li class="_tab_header_li " data-tab="tab3-2" onclick="change_tab (this, 'tab3-')">potential</li>
-      <li class="_tab_header_li " data-tab="tab3-3" onclick="change_tab (this, 'tab3-')">hint</li>
-      <li class="_tab_header_li " data-tab="tab3-4" onclick="change_tab (this, 'tab3-')">expert</li>
+      <li class="_tab_header_li selected_tab" data-tab="tab5-1" onclick="change_tab (this, 'tab5-')">gain</li>
+      <li class="_tab_header_li " data-tab="tab5-2" onclick="change_tab (this, 'tab5-')">potential</li>
+      <li class="_tab_header_li " data-tab="tab5-3" onclick="change_tab (this, 'tab5-')">hint</li>
+      <li class="_tab_header_li " data-tab="tab5-4" onclick="change_tab (this, 'tab5-')">expert</li>
     </ul>
   </div>
   <div class="_tab_content">
-  <div id="tab3-1">
+  <div id="tab5-1">
 <div class="_fixed_box" ><h3 class="_header">Code clean check</h3>
 <div class="_content">Detected a slowdown caused by scalar integer instructions (typically used for address computation).
-By removing them, you can lower the cost of an iteration from 4.50 to 4.00 cycles (1.12x speedup).
+By removing them, you can lower the cost of an iteration from 1.50 to 1.25 cycles (1.20x speedup).
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
 <div class="_content"><ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li></ul>
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Vectorization</h3>
 <div class="_content">Your loop is vectorized, but using only 128 out of 256 bits (SSE/AVX-128 instructions on AVX/AVX2 processors).
-By fully vectorizing your loop, you can lower the cost of an iteration from 4.50 to 2.25 cycles (2.00x speedup).
+By fully vectorizing your loop, you can lower the cost of an iteration from 1.50 to 0.75 cycles (2.00x speedup).
 <div class="_fixed_box" ><h3 class="_header">Details</h3>
 <div class="_content">All SSE/AVX instructions are used in vector version (process two or more data elements in vector registers).
 Since your execution units are vector units, only a fully vectorized loop can use their full power.
@@ -1540,51 +1519,51 @@ CQA target is Core_7x_V1 (Intel Kaby Lake Core Processors) but specialization fl
 </div></div></div></div><div class="_fixed_box" ><h3 class="_header">Execution units bottlenecks</h3>
 <div class="_content">Found no such bottlenecks but see expert reports for more complex bottlenecks.
 </div></div></div>
-  <div id="tab3-2">
+  <div id="tab5-2">
 No data for this section</div>
-  <div id="tab3-3">
+  <div id="tab5-3">
 <div class="_fixed_box" ><h3 class="_header">Type of elements and instruction set</h3>
-<div class="_content">4 SSE or AVX instructions are processing arithmetic or math operations on single precision FP elements in vector mode (four at a time).
+<div class="_content">1 SSE or AVX instructions are processing arithmetic or math operations on single precision FP elements in vector mode (four at a time).
 
 </div></div><div class="_fixed_box" ><h3 class="_header">Matching between your loop (in the source code) and the binary loop</h3>
-<div class="_content">The binary loop is composed of 16 FP arithmetical operations:
-<ul><li>16: multiply</li></ul>The binary loop is loading 64 bytes (16 single precision FP elements).
-The binary loop is storing 64 bytes (16 single precision FP elements).
+<div class="_content">The binary loop is composed of 4 FP arithmetical operations:
+<ul><li>4: multiply</li></ul>The binary loop is loading 16 bytes (4 single precision FP elements).
+The binary loop is storing 16 bytes (4 single precision FP elements).
 </div></div><div class="_fixed_box" ><h3 class="_header">Arithmetic intensity</h3>
 <div class="_content">Arithmetic intensity is 0.12 FP operations per loaded or stored byte.
 </div></div><div class="_fixed_box" ><h3 class="_header">Unroll opportunity</h3>
-<div class="_content">Loop is data access bound.
+<div class="_content">Loop body is too small to efficiently use resources.
 <div class="_fixed_box" ><h3 class="_header">Workaround</h3>
-<div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
+<div class="_content">Unroll your loop if trip count is significantly higher than target unroll factor. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam.
 </div></div></div></div></div>
-  <div id="tab3-4">
+  <div id="tab5-4">
 <div class="_fixed_box" ><h3 class="_header">General properties</h3>
-<div class="_content"><table><tr><td>nb instructions</td><td>19</td></tr><tr><td>nb uops</td><td>18</td></tr><tr><td>loop length</td><td>62</td></tr><tr><td>used x86 registers</td><td>5</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>2</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
+<div class="_content"><table><tr><td>nb instructions</td><td>7</td></tr><tr><td>nb uops</td><td>6</td></tr><tr><td>loop length</td><td>21</td></tr><tr><td>used x86 registers</td><td>5</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>2</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>0</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end</h3>
 <div class="_content">ASSUMED MACRO FUSION
 FIT IN UOP CACHE
-<table><tr><td>micro-operation queue</td><td>4.50 cycles</td></tr><tr><td>front end</td><td>4.50 cycles</td></tr></table>
+<table><tr><td>micro-operation queue</td><td>1.50 cycles</td></tr><tr><td>front end</td><td>1.50 cycles</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Back-end</h3>
-<div class="_content"><table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>2.50</td><td>2.50</td><td>2.67</td><td>2.67</td><td>4.00</td><td>2.00</td><td>2.00</td><td>2.67</td></tr><tr><td>cycles</td><td>2.50</td><td>2.50</td><td>2.67</td><td>2.67</td><td>4.00</td><td>2.00</td><td>2.00</td><td>2.67</td></tr></table>
+<div class="_content"><table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>1.00</td><td>0.75</td><td>0.83</td><td>0.50</td><td>1.00</td><td>0.75</td><td>0.50</td><td>0.67</td></tr><tr><td>cycles</td><td>1.00</td><td>0.75</td><td>0.83</td><td>0.50</td><td>1.00</td><td>0.75</td><td>0.50</td><td>0.67</td></tr></table>
 <table><tr><td>Cycles executing div or sqrt instructions</td><td>NA</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>1.00</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles summary</h3>
-<div class="_content"><table><tr><td>Front-end</td><td>4.50</td></tr><tr><td>Dispatch</td><td>4.00</td></tr><tr><td>Data deps.</td><td>1.00</td></tr><tr><td>Overall L1</td><td>4.50</td></tr></table>
+<div class="_content"><table><tr><td>Front-end</td><td>1.50</td></tr><tr><td>Dispatch</td><td>1.00</td></tr><tr><td>Data deps.</td><td>1.00</td></tr><tr><td>Overall L1</td><td>1.50</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vectorization ratios</h3>
 <div class="_content"><table><tr><td>all</td><td>100%</td></tr><tr><td>load</td><td>100%</td></tr><tr><td>store</td><td>100%</td></tr><tr><td>mul</td><td>100%</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Vector efficiency ratios</h3>
 <div class="_content"><table><tr><td>all</td><td>50%</td></tr><tr><td>load</td><td>50%</td></tr><tr><td>store</td><td>50%</td></tr><tr><td>mul</td><td>50%</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>
 </div></div><div class="_fixed_box" ><h3 class="_header">Cycles and memory resources usage</h3>
-<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 4.50 cycles. At this rate:
-<ul><li>22% of peak load performance is reached (14.22 out of 64.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>44% of peak store performance is reached (14.22 out of 32.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
+<div class="_content">Assuming all data fit into the L1 cache, each iteration of the binary loop takes 1.50 cycles. At this rate:
+<ul><li>16% of peak load performance is reached (10.67 out of 64.00 bytes loaded per cycle (GB/s @ 1GHz))</li><li>33% of peak store performance is reached (10.67 out of 32.00 bytes stored per cycle (GB/s @ 1GHz))</li></ul>
 </div></div><div class="_fixed_box" ><h3 class="_header">Front-end bottlenecks</h3>
 <div class="_content">Performance is limited by instruction throughput (loading/decoding program instructions to execution core) (front-end is a bottleneck).
 
-By removing all these bottlenecks, you can lower the cost of an iteration from 4.50 to 4.00 cycles (1.13x speedup).
+By removing all these bottlenecks, you can lower the cost of an iteration from 1.50 to 1.00 cycles (1.50x speedup).
 
 </div></div><div class="_fixed_box" ><h3 class="_header">ASM code</h3>
-<div class="_content">In the binary file, the address of the loop is: 1670
+<div class="_content">In the binary file, the address of the loop is: 1590
 
-<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>LEA 0x4(%RAX),%EDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>LEA 0x8(%RAX),%EDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>LEA 0xc(%RAX),%EDX</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>ADD $0x10,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM0,%XMM1</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM1,(%RBX,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%ECX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1670 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
+<table><tr><th>Instruction</th><th>Nb FU</th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th>Recip. throughput</th></tr><tr><td style='word-break:break-all;'>MOV %EAX,%EDX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>ADD $0x4,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>MOVAPS (%RDI,%RDX,4),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MULPS %XMM1,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td></tr><tr><td style='word-break:break-all;'>MOVAPS %XMM0,(%RBP,%RDX,4)</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>0.33</td><td>1</td><td>0</td><td>0</td><td>0.33</td><td>3</td><td>1</td></tr><tr><td style='word-break:break-all;'>CMP %EAX,%ESI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td></tr><tr><td style='word-break:break-all;'>JA 1590 </td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td></tr></table>
 </div></div></div>
 </div></div>
     </div>
@@ -1601,7 +1580,7 @@ function cqa_onresize ()
 function cqa_loadhelp (divId) {
   var e = document.getElementById (divId);
   if (e != null) {
-    e.setAttribute ("tooltip_id", "29");
+    e.setAttribute ("tooltip_id", "23");
   }
 }
   </script>
@@ -1967,19 +1946,13 @@ addLoadEvent(function(){
   </div>
 </div><script>
 var tooltips_texts = ['Go to previous loop: 6',
-'/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h: 198-198<br>/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h: 976-976<br>/home/m/AOA/src/kernels/kernel_vectorized_loops.c: 70-81<br>',
-'Go to next loop: 7',
+'/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h: 198-198<br>/usr/lib/gcc/x86_64-linux-gnu/10/include/xmmintrin.h: 976-976<br>/home/m/AOA/src/kernels/kernel_vectorized_loops.c: 46-48<br>',
+'Go to next loop: 4',
 'Open on a new tab',
 'Open on a new tab',
 'Check the box to display the group analysis. A group is a set of instructions accessing to the same memory area',
 'Size: 1<br>Pattern: L<br>Span: 16<br>Head: 0<br>Unroll factor: 1<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 16<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 0<br>',
 'Size: 1<br>Pattern: S<br>Span: 16<br>Head: 0<br>Unroll factor: 1<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 16<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 0<br>',
-'Size: 3<br>Pattern: LLL<br>Span: 16<br>Head: 0<br>Unroll factor: 3<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 48<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 32<br>',
-'Size: 3<br>Pattern: SSS<br>Span: 16<br>Head: 0<br>Unroll factor: 3<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 48<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 32<br>',
-'Size: 3<br>Pattern: LLL<br>Span: 16<br>Head: 0<br>Unroll factor: 3<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 48<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 32<br>',
-'Size: 3<br>Pattern: SSS<br>Span: 16<br>Head: 0<br>Unroll factor: 3<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 48<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 32<br>',
-'Size: 3<br>Pattern: LLL<br>Span: 16<br>Head: 0<br>Unroll factor: 3<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 48<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 32<br>',
-'Size: 3<br>Pattern: SSS<br>Span: 16<br>Head: 0<br>Unroll factor: 3<br>Stride status: Success<br>Stride: 0<br>Accessed memory status: Success<br>Accessed memory: 48<br>Accessed memory without overlapping: 16<br>Accessed memory reused: 32<br>',
 'Assembly code of the object (loop / function).<br/>It is analyzed using MAQAO core',
 'Source code of the loop.<br/>It is extracted using MAQAO core.',
 'Coverage of the callchain',
