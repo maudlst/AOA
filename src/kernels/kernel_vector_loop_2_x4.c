@@ -20,7 +20,7 @@ void kernel(unsigned n, float a[n], const float b[n])
         tmp[i+3] = i+3 + b[i+3];
         s += tmp[i] + tmp[i+1] + tmp[i+2] + tmp[i+3];
     }
-    for(i = n - 4 ; i < n; i++)
+    for(; i < n; i++)
     {
         tmp[i] = i + b[i];
         s += tmp[i];

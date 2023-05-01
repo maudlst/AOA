@@ -28,7 +28,7 @@ void kernel(unsigned n, float * restrict a, const float * restrict b)
         
         _mm_store_ps(&tmp[i], tmp_vec);
 
-        i_float = (float)i+4;
+        i_float += 4;
         ivals_vec = _mm_set_ps(i_float, i_float+1, i_float+2, i_float+3);
         b_vec = _mm_load_ps(&b[i+4]);
         tmp_vec = _mm_add_ps(b_vec, ivals_vec);
@@ -36,7 +36,7 @@ void kernel(unsigned n, float * restrict a, const float * restrict b)
         
         _mm_store_ps(&tmp[i+4], tmp_vec);
 
-        i_float = (float)i+8;
+        i_float += 4;
         ivals_vec = _mm_set_ps(i_float, i_float+1, i_float+2, i_float+3);
         b_vec = _mm_load_ps(&b[i+8]);
         tmp_vec = _mm_add_ps(b_vec, ivals_vec);
@@ -44,7 +44,7 @@ void kernel(unsigned n, float * restrict a, const float * restrict b)
         
         _mm_store_ps(&tmp[i+8], tmp_vec);
 
-        i_float = (float)i+12;
+        i_float += 4;
         ivals_vec = _mm_set_ps(i_float, i_float+1, i_float+2, i_float+3);
         b_vec = _mm_load_ps(&b[i+12]);
         tmp_vec = _mm_add_ps(b_vec, ivals_vec);
